@@ -8,16 +8,19 @@
 }
 
 body {
+  height: 100%; 
+  width: 100%; 
+  padding:0;
   margin:0;
+  overflow: hidden; 
+  display:grid;
+  place-items:center center;
+  /* background-color: #ffc80b; */
 }
 
 button:not([disabled]) {
   cursor:pointer;
 }
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -28,9 +31,6 @@ button:not([disabled]) {
 }
 
 
-
-
-
 /********************/
 /* ALGEMENE STYLING */
 /********************/
@@ -39,7 +39,379 @@ h1 {
   color:var(--color-headings);
 }
 
+main {
+  height: 100vh;
+  display:flex;
+  /* justify-content:center; */
+  /* align-items:center; */
+  margin:0;
+}
 
+article {
+  width:24em;
+  height:28em;
+  top:2em;
+  background-color: #00712a;
+  border: 2px solid black;
+  position: relative;
+  justify-content:center;
+  align-items:center;
+}
+
+.kastrand ul{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  list-style: none;
+  /* margin: none; */
+  /* position: relative; */
+  padding: 0%;
+  top:-50%;
+  /* width:26em; */
+  
+}
+
+.kastrand {
+  position: absolute;
+  margin:0;
+  top: -1.5em;
+  left: -1.1em;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.kastrand ul li:first-of-type{
+  width: 26em;
+  height: 1em;
+  background-color: #00712a;
+  border: 2px solid black;
+  /* text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; */
+  /* top:-.4em; */
+  /* outline: 2px solid black;
+  outline-offset: -2px; */
+}
+
+.kastrand ul li:last-of-type{
+  position: absolute;
+  width: 25em;
+  height:1.5em;
+  background-color: #00712a;
+  outline: 2px solid black;
+  /* zorgt ervoor dat de border buiten het element 
+  zit en hierdoor niet overlapt met de border van kastbovenboven*/
+  /* text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; */
+  left: .4em;
+}
+
+ul {
+  /* zorgt ervoor dat de tekst niet zichtbaar is */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /*list-style: none;
+  position: relative;
+  padding: 0%; */
+  top:-50%;
+}
+
+/* section.kastonder {
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  top: 27.5em;
+  left: -.6em;
+  width: 25em;
+  height:1.5em;
+  justify-content:center;
+  align-items:center;
+} */
+
+/* kastonder */
+section:nth-of-type(2) {
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  top: 27.5em;
+  left: -.6em;
+  width: 25em;
+  height:1.5em;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/* section.deurlinks {
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:25em;
+  top: 3.1em;
+  left: -7.5em;
+  transform: rotate(-9deg) skew(-9deg, -3deg);
+} */
+
+/* open kast deur */
+section:nth-of-type(3){
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:25em;
+  top: 3.1em;
+  left: -7.5em;
+  transform: rotate(-9deg) skew(-9deg, -3deg);
+}
+
+/* diepte van openkast deur */
+section:nth-of-type(4){
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 0.5em;
+  height:25.4em;
+  top: 3.6em;
+  left: -7.4em;
+}
+
+/* kast diepte */
+section:nth-of-type(5){
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 1.5px solid black;
+  width: 20em;
+  height:25.3em;
+  top: 2.1em;
+  left:2em;
+}
+/* section.deurrechts {
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:20em;
+  top: 5em;
+  right: 2em;
+} */
+
+/* rechterdeur */
+/* section:nth-of-type(6){
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 12em;
+  height:25.3em;
+  top: 2.1em;
+  left:12em;
+}
+
+section:nth-of-type(6):hover {
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:25em;
+  top: 3em;
+  left:23.8em;
+  transform: rotate(9deg) skew(9deg, 3deg);
+} */
+
+/* planken */
+
+.plank ul {
+  list-style: none;
+  padding: 0%;
+}
+.plank ul li{
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 24em;
+  height:.5em;
+  top: 6em;
+}
+
+
+.plank ul li:nth-of-type(2){
+  /* margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black; */
+  top: 10em;
+}
+.plank ul li:nth-of-type(3){
+  /* margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black; */
+  top: 14.5em;
+}
+.plank ul li:nth-of-type(4){
+  /* margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black; */
+  top: 19em;
+}
+
+.plank ul li:last-of-type{
+  /* margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black; */
+  top: 23.3em;
+}
+
+section.rechterdeur {
+  z-index: 2;
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 12em;
+  height:25.3em;
+  top: 2.1em;
+  left:12em;
+}
+section.rechterdeur:hover{
+  /* transition: 1s; */
+  margin:0;
+  position: absolute;
+  width: 7.5em;
+  height:25em;
+  top: 3em;
+  left:23.8em;
+  transform: rotate(9deg) skew(9deg, 3deg);
+}
+
+section.binnenkant {
+  opacity: 1;
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:20em;
+  top: 3em;
+  right:2em;
+}
+
+section.binnenkant:hover {
+  opacity: 0;
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:20em;
+  top: 3em;
+  right:2em;
+}
+
+
+/* binnen in rechter deur */
+/* section:last-of-type{
+  opacity: 1;
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:20em;
+  top: 5em;
+  right:2em;
+} */
+/* section:last-of-type:hover{
+  opacity: 0;
+  margin:0;
+  position: absolute;
+  background-color: #00712a;
+  outline: 2px solid black;
+  width: 7.5em;
+  height:20em;
+  top: 5em;
+  left: 15em;
+} */
+
+.rechterdeur button{
+  margin:0;
+  position: absolute;
+  border-radius: 100%;
+  background-color:#ffc80b;
+  outline: 2px solid black;
+  width:1em;
+  height: 1em;
+  top: 17em;
+  right: 12.3em;
+}
+.rechterdeur button:hover{
+  opacity:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* button{
+  content:"";
+  margin:0;
+  position: absolute;
+  border-radius: 100%;
+  background-color:#ffc80b;
+  outline: 2px solid black;
+  width:5em;
+  height: 5em;
+  top: 18em;
+  right: 12.3em;
+} */
+
+
+/* li {
+  background: pink;
+  position: absolute;
+  
+}
+
+li:nth-of-type(2) {
+  background: powderblue;
+}
+
+li:nth-of-type(3) {
+  background: purple;
+}
+
+li:nth-of-type(4) {
+  background: royalblue;
+}
+li:nth-of-type(5) {
+  background: palevioletred;
+}
+
+li:last-of-type {
+  background: crimson;
+} */
 /* ... */
 
 
