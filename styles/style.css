@@ -12,7 +12,9 @@
 
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box; 
+  margin:0;
+  padding:0;
 }
 
 body {
@@ -28,6 +30,10 @@ body {
 
 button:not([disabled]) {
   cursor:pointer;
+}
+
+button {
+  padding:0;
 }
 
 /*********************/
@@ -50,130 +56,87 @@ h1 {
 
 main {
   height: 100vh;
-  display:flex;
-  /* justify-content:center; */
-  /* align-items:center; */
-  margin:0;
+  display:
+  flex;
+  justify-content:
+  center;
+  align-items:
+  center;
+  position: relative;margin:0;
+  width: 100%;
 }
 
-article {
-  margin-top: 5em;
+article:first-of-type {
+  
   width:24em;
-  height:28em;
+  height:25em;
   top:2em;
   background-color: #00712a;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: inset 0 0 0 2px black;
   position: relative;
-  justify-content:center;
-  align-items:center;
+}
+
+article:first-of-type section:nth-of-type(1) {
+  position: absolute;
+  bottom:calc(100% - 2px);
+  left:0;
+  width:100%;
 }
 
 section:nth-of-type(1) ul{
   list-style: none;
-  /* margin: none; */
-  /* position: relative; */
-  padding: 0%;
-  top:-50%;
-  /* width:26em; */
-}
-
-section:nth-of-type(1) {
-  position: absolute;
   margin:0;
-  top: -1.5em;
-  left: -1.1em;
-  justify-content:center;
+  padding:0;
+  display:flex;
+  flex-direction: column;
   align-items:center;
 }
-
 
 section:nth-of-type(1) ul li:first-of-type{
   width: 26em;
   height: 1em;
   background-color: #00712a;
-  border: 2px solid black;
-  /* text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; */
-  /* top:-.4em; */
-  /* outline: 2px solid black;
-  outline-offset: -2px; */
+
+  box-shadow: inset 0 0 0 2px black;
 }
 
 section:nth-of-type(1) ul li:last-of-type{
-  position: absolute;
   width: 25em;
   height:1.5em;
   background-color: #00712a;
-  outline: 2px solid black;
-  /* zorgt ervoor dat de border buiten het element 
-  zit en hierdoor niet overlapt met de border van kastbovenboven*/
-  /* text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; */
-  left: .4em;
-}
+  box-shadow: inset 0 0 0 2px black;
 
-/* section.kastonder {
-  margin:0;
-  position: absolute;
-  background-color: #00712a;
-  outline: 2px solid black;
-  top: 27.5em;
-  left: -.6em;
-  width: 25em;
-  height:1.5em;
-  justify-content:center;
-  align-items:center;
-} */
+  margin-top:-2px;
+}
 
 /* kastonder */
-section:nth-of-type(2) {
-  margin:0;
-  position: absolute;
-  background-color: #00712a;
-  outline: 2px solid black;
-  top: 27.5em;
-  left: -.6em;
-  width: 25em;
-  height:1.5em;
-  justify-content:center;
-  align-items:center;
-}
-
-
-/* section.deurlinks {
-  margin:0;
-  position: absolute;
-  background-color: #00712a;
-  outline: 2px solid black;
-  width: 7.5em;
-  height:25em;
-  top: 3.1em;
-  left: -7.5em;
-  transform: rotate(-9deg) skew(-9deg, -3deg);
-} */
-
-/* deur links */
-section:nth-of-type(3){
-  /* margin:0;
-  position: absolute;
-  background-color: #00712a;
-  outline: 2px solid black;
-  width: 7.5em;
-  height:25em;
-  top: 3.1em;
-  left: -7.5em;
-  transform: rotate(-9deg) skew(-9deg, -3deg); */
-  z-index: 2;
-  margin:0;
+article:first-of-type section:nth-of-type(2) {
   position: absolute;
   background-color: #00712a;
   box-shadow: inset 0 0 0 2px black;
-  width: 12.15em;
-  height:25.5em;
-  top: 2em;
-  left:-.05em;
+  /* kast onder zit tegen article aan met min 2 px vanwege de box schadow */
+  top: calc(100% - 2px);
+  left: -.5em;
+  width: 25em;
+  height:1.5em;
+}
+
+
+
+
+/* deur links */
+section:nth-of-type(3){
+  z-index: 2;
+  position: absolute;
+  background-color: #00712a;
+  box-shadow: inset 0 0 0 2px black;
+  /* de breedte van de deur plus 1 px want zo vermijd je het gat tussen de deuren, 
+  hierdoor overlappen we elkaar wel een beetje */
+  width:calc(10em + 1px);
+  height:25em;
+  top:0;
+  left:2em;
 /* Docent geholpen van 184 tot 188 - met 184 zorgt ervoor dat 
 die kant vast staat wanneer het element wordt gedraaid */
   transform-origin: left center;
@@ -184,19 +147,18 @@ die kant vast staat wanneer het element wordt gedraaid */
 }
 
 .linkerdeurOpen{
-  transform: rotateY(-135deg) translateZ(0px) translateX(0px) translateY(0px) skewY(15deg);
+  /* hoe de deur open gaat */
+  transform: rotateY(-135deg) skewY(15deg);
 }
 
 /* binnenkant */
 section:nth-of-type(3) div:nth-of-type(1){
   position:absolute;
-  z-index: 3;
-  /* background-color: #8f1b60; */
   box-shadow: inset 0 0 0 2px black;
-  /* border: solid 2px black; */
   width: 7.5em;
   height:20em;
-  top:2.7em;
+  /* doordat de section een 3d transform style heeft, weet de section dat waneer 
+  het wordt gedraaid dat de binnekant niet zichtbaar is als het eenmaal is gedraaid */
   backface-visibility: hidden;
 }
 
@@ -208,7 +170,7 @@ section:nth-of-type(3) div:nth-of-type(2) {
   width:100%;
   height:.5em;
   transform-origin: center top;
-  transform:rotateX(90deg);
+  transform:rotateX(-90deg);
   background-color: #00712a;
   box-shadow: inset 0 0 0 1px black;
 }
@@ -216,19 +178,18 @@ section:nth-of-type(3) div:nth-of-type(2) {
 /* zijkant */
 section:nth-of-type(3) div:nth-of-type(3) {
   position:absolute;
-  top:-.2em;
-  right:-1em;
+  top:0;
+  right:0;
   height:100%;
   width:.5em;
-  transform-origin: left center;
-  transform:rotateY(90deg);
-
+  transform-origin: right center;
+  transform:rotateY(-90deg);
   background-color: #00712a;
   box-shadow: inset 0 0 0 1px black;
 }
 
 /* achterkant */
-section:nth-of-type(3)div:nth-of-type(4) {
+section:nth-of-type(3) div:nth-of-type(4) {
   position:absolute;
   inset:0;
   transform:translateZ(-.5em);
@@ -243,88 +204,66 @@ section:nth-of-type(4){
   margin:0;
   position: absolute;
   background-color: #00712a;
-  outline: 1.5px solid black;
+  box-shadow: inset 0 0 0 2px black;
   width: 20em;
-  height:25.3em;
-  top: 2.1em;
+  height:25em;
+  top:0;
   left:2em;
 }
-/* section.deurrechts {
-  margin:0;
-  position: absolute;
-  background-color: #00712a;
-  outline: 2px solid black;
-  width: 7.5em;
-  height:20em;
-  top: 5em;
-  right: 2em;
-} */
-
-/* rechterdeur */
-/* section:nth-of-type(6){
-  margin:0;
-  position: absolute;
-  background-color: #00712a;
-  outline: 2px solid black;
-  width: 12em;
-  height:25.3em;
-  top: 2.1em;
-  left:12em;
-}
-
-section:nth-of-type(6):hover {
-  margin:0;
-  position: absolute;
-  background-color: #00712a;
-  outline: 2px solid black;
-  width: 7.5em;
-  height:25em;
-  top: 3em;
-  left:23.8em;
-  transform: rotate(9deg) skew(9deg, 3deg);
-} */
 
 
 
 /* planken */
-section:nth-of-type(5) ul {
-  list-style: none;
-  padding: 0%;
-}
-section:nth-of-type(5) ul li{
+section:nth-of-type(5) {
   margin:0;
   position: absolute;
+  background-color: red;
+  box-shadow: inset 0 0 0 2px black;
+  width: 20em;
+  height:25em;
+  top:0;
+  left:2em;
+}
+
+section:nth-of-type(5) ul {
+  height:100%;
+  margin:0;
+  padding:0;
+  list-style: none;
+  /* background-color: #00f8; */
+
+  display:flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(5) ul li {
+  flex-grow:1;
+  width: 100%;
+  position:relative;
+}
+
+section:nth-of-type(5) ul li::after {
+  content:"";
   background-color: #00712a;
-  outline: 2px solid black;
-  width: 23.5em;
-  height:.5em;
+  box-shadow: inset 0 0 0 2px black;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:.8em;
 }
-section:nth-of-type(5) ul li:nth-of-type(1){
-  top: 6em;
-}
-section:nth-of-type(5) ul li:nth-of-type(2){
-  top: 10em;
-}
-section:nth-of-type(5) ul li:nth-of-type(3){
-  top: 14.5em;
-}
-section:nth-of-type(5) ul li:nth-of-type(4){
-  top: 19em;
-}
-section:nth-of-type(5) ul li:last-of-type{
-  top: 23.3em;
-}
+
+
 
 section:nth-of-type(6) {
   z-index: 2;
-  margin:0;
   position: absolute;
   background-color: #00712a;
   box-shadow: inset 0 0 0 2px black;
-  width: 12.15em;
-  height:25.5em;
-  top: 2em;
-  right:-.2em;
+  width:calc(10em + 1px);
+  height:25em;
+  top:0;
+  right:2em;
 /* Docent geholpen van 274 tot 279 - met 271 zorgt ervoor dat 
 die kant vast staat wanneer het element wordt gedraaid */
   transform-origin: right center;
@@ -335,7 +274,7 @@ die kant vast staat wanneer het element wordt gedraaid */
 }
 
 .rechterdeurOpen{
-  transform: rotateY(135deg) translateZ(0px) translateX(0px) translateY(0px) skewY(-15deg);
+  transform: rotateY(135deg) skewY(-15deg);
 }
 
 
@@ -346,7 +285,6 @@ section:nth-of-type(6) div:nth-of-type(1) {
   box-shadow: inset 0 0 0 2px black;
   width: 7.5em;
   height:20em;
-  top:2.7em;
   backface-visibility: hidden;
 }
 
@@ -373,7 +311,6 @@ section:nth-of-type(6) div:nth-of-type(3) {
   width:.5em;
   transform-origin: left center;
   transform:rotateY(90deg);
-
   background-color: #00712a;
   box-shadow: inset 0 0 0 1px black;
 }
@@ -385,6 +322,7 @@ section:nth-of-type(6) div:nth-of-type(4) {
   transform:translateZ(-.5em);
   background-color: #00712a;
   box-shadow: inset 0 0 0 1px black;
+
 }
 
 /* papier */
@@ -429,20 +367,20 @@ section:nth-of-type(6) div:nth-of-type(4) {
 /* deurklink */
 section:nth-of-type(6) button{
   margin:0;
+  padding:0;
   position: absolute;
-  border-radius: 50%;
   background-color:#ffc80b;
-  /* background-color: white; */
   box-shadow: inset 0 0 0 1px black;
+  border-radius: 50%;
+  border: none;
   width:1.5em;
   height: 1.5em;
   top: 16em;
   left: .8em;
-  padding:0;
   backface-visibility: hidden;
 }
 
-section:nth-of-type(7){
+/* section:nth-of-type(7){
   position: absolute;
   z-index: -1;
   margin: 0;
@@ -454,9 +392,7 @@ section:nth-of-type(7){
   top: 17em;
   right: -1.4em;
   animation: verstoppertje 6s .5s infinite ease-in forwards;
-  /* transition: 3s; */
-}
-
+} */
 section:nth-of-type(8){
   margin:0;
   position: absolute;
@@ -469,7 +405,6 @@ section:nth-of-type(8){
   right:-20em;
   border-radius: 2%;
 }
-
 /* pin 1 */
 section:nth-of-type(8) div:nth-of-type(1){
   margin:0;
@@ -482,7 +417,6 @@ section:nth-of-type(8) div:nth-of-type(1){
   top:1.5em;
   left: 1em;
 }
-
 /* pin 2 */
 section:nth-of-type(8) div:nth-of-type(2){
   margin:0;
@@ -495,6 +429,7 @@ section:nth-of-type(8) div:nth-of-type(2){
   top:1.5em;
   right: 1em;
 }
+/* introductietekst */
 section:nth-of-type(8) div:nth-of-type(3){
   margin:0;
   z-index: 5;
@@ -503,18 +438,183 @@ section:nth-of-type(8) div:nth-of-type(3){
   left: 1.4em;
 }
 
-/* section:nth-of-type(9){
+/* de boeken in de boekenkast */
+section:nth-of-type(9) ul li {
+  height:100%;
+  margin:0;
+  padding:0;
+  list-style: none;
+}
 
+article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button{
+  position: absolute;
+  background-color: blue;
+  box-shadow: inset 0 0 0 2px black;
+  width: 1em;
+  height: 3em;
+  top:1.15em; 
+  left: 5em;
+  border:none;
+  padding: 0;
+  margin:0;
+}
+/* 
+section:nth-of-type(9) li:nth-of-type(1) button.openEersteBoek{
+  display: flex;
 } */
 
+main article.openEersteBoek {
+  display: flex;
+}
+
+
+article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button:hover{
+  top:0em; 
+  transition: .5s;
+}
+
+
+article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button.openEersteBoek{
+  display: flex;
+}
+
+/* section:nth-of-type(9) li:nth-of-type(1) img.openEersteBoek {
+  content: url("../images/nijn.png");
+  z-index: 15;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top:-7.5em;
+  left:-6em;
+  width:35em;
+  height:40em;
+} */
+
+section:nth-of-type(9) li:nth-of-type(2) button{
+  position: absolute;
+  background-color: palevioletred;
+  box-shadow: inset 0 0 0 2px black;
+  width: 1em;
+  height: 2.5em;
+  top:6.65em; 
+  left: 9em;
+  border:none;
+}
+section:nth-of-type(9) li:nth-of-type(2) button:hover{
+  top:6.15em; 
+  transition: .5s;
+}
+
+section:nth-of-type(9) li:nth-of-type(3) button{
+  position: absolute;
+  background-color: paleturquoise;
+  box-shadow: inset 0 0 0 2px black;
+  width: 1em;
+  height: 2.5em;
+  top:11.5em; 
+  right: 7.5em;
+  transform: rotate(15deg);
+  border:none;
+}
+section:nth-of-type(9) li:nth-of-type(3) button:hover{
+  transform: rotate(90deg) translateY(-1em) translateX(1em);
+  transition: 1.5s;
+  top: 11.4em;
+}
+
+section:nth-of-type(9) li:nth-of-type(4) button{
+  position: absolute;
+  background-color:crimson;
+  box-shadow: inset 0 0 0 2px black;
+  width: 1em;
+  height: 2.5em;
+  bottom:10.85em; 
+  left: 13.5em;
+  border:none;
+}
+section:nth-of-type(9) li:nth-of-type(4) button:hover{
+  bottom:11.35em; 
+  transition: .5s;
+}
+
+section:nth-of-type(9) li:nth-of-type(5) button{
+  position: absolute;
+  background-color:cornflowerblue;
+  box-shadow: inset 0 0 0 2px black;
+  width: 1em;
+  height: 2.5em;
+  bottom:5.85em; 
+  right: 5em;
+  border:none;
+}
+section:nth-of-type(9) li:nth-of-type(5) button:hover{
+  bottom:6.35em; 
+  transition: .5s;
+}
+
+section:nth-of-type(9) li:nth-of-type(6) button{
+  position: absolute;
+  background-color:salmon;
+  box-shadow: inset 0 0 0 2px black;
+  width: 1em;
+  height: 2.5em;
+  bottom: .9em; 
+  left: 7em;
+  transform: rotate(-15deg);
+  border:none;
+}
+
+section:nth-of-type(9) li:nth-of-type(6)button:hover{
+  transform: rotate(-90deg) translateY(1em) translateX(-1em);
+  transition: 1.5s;
+  transform-origin: left bottom;
+  bottom:1.9em;
+}
+
+
+article:nth-of-type(1n+2){
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  height: 80%;
+  display: none;
+  flex-direction: row;
+  box-shadow: 0em 0em 1em #28242430;
+}
+
+article:nth-of-type(1n +2) section {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+}
+
+article:nth-of-type(1n +2) section.openEersteBoek {
+  display:flex;
+}
+
+
+
+article:nth-of-type(1n +2) section:nth-of-type(odd) {
+border-right: .1em solid black;
+}
+
+
+
+
 @keyframes verstoppertje{
-  0% {transform: translateX(-1em); }
+  0% {transform: translateX(-1.5em); }
   70% {transform: translateX(1em); }
   90% {transform: translateX(.8em); }
   /* 90% {transform: translateX(-3em);} */
-  100% {transform: translateX(-1em); }
+  100% {transform: translateX(-1.5em); }
 }
 
+
+
+@keyframes boek1 {
+0% {transform: translateY(0);}
+0% {transform: translateY(-.5em);}
+}
 /* section:nth-of-type(7) div:nth-of-type(2){
   margin:0;
   position: absolute;
