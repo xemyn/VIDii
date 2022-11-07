@@ -14,6 +14,42 @@ function toggleDoor() {
 
 
 // Het eerste boek die je aanklikt zodat je een boek opent
+// var deEersteBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button")
+// deEersteBoekButton.addEventListener("click", eersteBoek);
+
+// function eersteBoek() {
+//     var boekEen = document.querySelector("article:nth-of-type(2)")
+//     boekEen.classList.add("openEersteBoek");
+// }
+// Het eerste boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+// var deEersteOpenBoekButton = document.querySelector("article:nth-of-type(2) button")
+// deEersteOpenBoekButton.addEventListener("click", eersteOpenBoek);
+
+// function eersteOpenBoek() {
+//     var boekOpenEen = document.querySelector("article:nth-of-type(2)")
+//     boekOpenEen.classList.add("openEersteBoekButton");
+// }
+
+// var deEersteOpenBoekButton = document.querySelector("article:nth-of-type(8) section:nth-of-type(1) button:nth-of-type(1)")
+// deEersteOpenBoekButton.addEventListener("click", eersteOpenBoek);
+
+// function eersteOpenBoek() {
+//     var boekOpenEen = document.querySelector("article:nth-of-type(8)")
+//     boekOpenEen.classList.add("openEersteBoekButton");
+// }
+
+
+
+// Het eerste boek is open geklapt en je wilt via het opengeklapte boek weer naar anderre pagina van het eerste boek
+// var deEersteOpenBoekButtonVolg = document.querySelector("article:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(1)")
+// deEersteOpenBoekButtonVolg.addEventListener("click", eersteOpenBoekVolg);
+
+// function eersteOpenBoekVolg() {
+//     var boekOpenEenVolg = document.querySelector("article:nth-of-type(8)")
+//     boekOpenEenVolg.classList.add("openEersteBoekButtonVolg");
+// }
+
+// Het eerste boek die je aanklikt zodat je een boek opent
 var deEersteBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button")
 deEersteBoekButton.addEventListener("click", eersteBoek);
 
@@ -29,7 +65,6 @@ function eersteOpenBoek() {
     var boekOpenEen = document.querySelector("article:nth-of-type(2)")
     boekOpenEen.classList.add("openEersteBoekButton");
 }
-
 
 
 
