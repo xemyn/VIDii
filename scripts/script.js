@@ -55,53 +55,153 @@ deEersteBoekButton.addEventListener("click", eersteBoek);
 
 function eersteBoek() {
     var boekEen = document.querySelector("article:nth-of-type(2)")
-    boekEen.classList.add("openEersteBoek");
+    boekEen.classList.toggle("openEersteBoek");
 }
 // Het eerste boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
-var deEersteOpenBoekButton = document.querySelector("article:nth-of-type(2) button")
+var deEersteOpenBoekButton = document.querySelector("article:nth-of-type(2)")
 deEersteOpenBoekButton.addEventListener("click", eersteOpenBoek);
 
 function eersteOpenBoek() {
     var boekOpenEen = document.querySelector("article:nth-of-type(2)")
-    boekOpenEen.classList.add("openEersteBoekButton");
+    boekOpenEen.classList.toggle("openEersteBoekButton");
 }
 
 
 
-// Het tweede boek
+// Het tweede boek die je opent 
 var deTweedeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(2) button")
 deTweedeBoekButton.addEventListener("click", tweedeBoek);
 
 function tweedeBoek() {
     var boekTwee = document.querySelector("article:nth-of-type(3)")
-    boekTwee.classList.add("openTweedeBoek");
+    boekTwee.classList.toggle("openTweedeBoek");
 }
+// Het tweede boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var deTweedeOpenBoekButton = document.querySelector("article:nth-of-type(3) section:nth-of-type(1) button:nth-of-type(1) img")
+deTweedeOpenBoekButton.addEventListener("click", tweedeOpenBoek);
+
+function tweedeOpenBoek() {
+    var boekOpenTwee = document.querySelector("article:nth-of-type(3)")
+    boekOpenTwee.classList.toggle("openTweedeBoekButton");
+}
+
+// Naar de volgende bladzijde op tweedeboek 
+var devolgendebladboek2button = document.querySelector("article:nth-of-type(3) section:nth-of-type(2) button:nth-of-type(1) img")
+devolgendebladboek2button.addEventListener("click", volgblad);
+
+function volgblad() {
+    var boektweeblad = document.querySelector("article:nth-of-type(4)")
+    boektweeblad.classList.toggle("openvoglendeblad");
+}
+
+// Het tweede boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var terugvolg = document.querySelector("article:nth-of-type(4) section:nth-of-type(1) button:nth-of-type(1) img")
+terugvolg.addEventListener("click", vorigepagina);
+
+function vorigepagina() {
+    var boekOpenTweevolg = document.querySelector("article:nth-of-type(4)")
+    boekOpenTweevolg.classList.toggle("terugVorigePagina");
+}
+
+
 
 // Het Derde boek
 var deDerdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(3) button")
 deDerdeBoekButton.addEventListener("click", derdeBoek);
 
 function derdeBoek() {
-    var boekDrie = document.querySelector("article:nth-of-type(4)")
-    boekDrie.classList.add("openDerdeBoek");
+    var boekDrie = document.querySelector("article:nth-of-type(5)")
+    boekDrie.classList.toggle("openDerdeBoek");
 }
+
+// Naar de volgende bladzijde op derdeboek 
+var devolgendebladboek3button = document.querySelector("article:nth-of-type(5) section:nth-of-type(2) button:nth-of-type(1) img")
+devolgendebladboek3button.addEventListener("click", volgblad2);
+
+function volgblad2() {
+    var boekdrieblad = document.querySelector("article:nth-of-type(6)")
+    boekdrieblad.classList.toggle("openvoglendeblad2");
+}
+
+// Het derde boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var deDerdeOpenBoekButton = document.querySelector("article:nth-of-type(5) section:nth-of-type(1) button:nth-of-type(1) img")
+deDerdeOpenBoekButton.addEventListener("click", derdeOpenBoek);
+
+function derdeOpenBoek() {
+    var boekOpendrie = document.querySelector("article:nth-of-type(5)")
+    boekOpendrie.classList.toggle("openDerdeBoekButton");
+}
+// Het tweede boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var terugvolg2 = document.querySelector("article:nth-of-type(6) section:nth-of-type(1) button:nth-of-type(1) img")
+terugvolg2.addEventListener("click", vorigepagina2);
+
+function vorigepagina2() {
+    var boekOpendrievolg = document.querySelector("article:nth-of-type(6)")
+    boekOpendrievolg.classList.toggle("terugVorigePagina2");
+}
+
+
+
 
 // Het Vierde boek
 var deVierdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(4) button")
 deVierdeBoekButton.addEventListener("click", vierdeBoek);
 
 function vierdeBoek() {
-    var boekVier = document.querySelector("article:nth-of-type(5)")
-    boekVier.classList.add("openVierdeBoek");
+    var boekVier = document.querySelector("article:nth-of-type(7)")
+    boekVier.classList.toggle("openVierdeBoek");
 }
+
+
+// Naar de volgende bladzijde op derdeboek 
+var devolgendebladboek4button = document.querySelector("article:nth-of-type(7) section:nth-of-type(2) button:nth-of-type(1) img")
+devolgendebladboek4button.addEventListener("click", volgbladvanvierde);
+
+function volgbladvanvierde() {
+    var boekvierblad = document.querySelector("article:nth-of-type(8)")
+    boekvierblad.classList.toggle("openvoglendeblad4");
+}
+
+
+
+// Het Vierde boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var deVierdeOpenBoekButton = document.querySelector("article:nth-of-type(7) section:nth-of-type(1) button:nth-of-type(1) img")
+deVierdeOpenBoekButton.addEventListener("click", vierdeOpenBoek);
+
+function vierdeOpenBoek() {
+    var boekOpenvier = document.querySelector("article:nth-of-type(7)")
+    boekOpenvier.classList.toggle("openVierdeBoekButton");
+}
+// Het tweede boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var terugvolg4 = document.querySelector("article:nth-of-type(8) section:nth-of-type(1) button:nth-of-type(1) img")
+terugvolg4.addEventListener("click", vorigepagina4);
+
+function vorigepagina4() {
+    var boekOpenviervolg = document.querySelector("article:nth-of-type(8)")
+    boekOpenviervolg.classList.toggle("terugVorigePagina4");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Het vijfde boek
 var deVijfdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(5) button")
 deVijfdeBoekButton.addEventListener("click", vijfdeBoek);
 
 function vijfdeBoek() {
-    var boekVijf = document.querySelector("article:nth-of-type(6)")
-    boekVijf.classList.add("openVijfdeBoek");
+    var boekVijf = document.querySelector("article:nth-of-type(9)")
+    boekVijf.classList.toggle("openVijfdeBoek");
 }
 
 // Het zesde boek
@@ -110,7 +210,7 @@ deZesdeBoekButton.addEventListener("click", zesdeBoek);
 
 function zesdeBoek() {
     var boekZes = document.querySelector("article:nth-of-type(7)")
-    boekZes.classList.add("openZesdeBoek");
+    boekZes.classList.toggle("openZesdeBoek");
 }
 
 
@@ -146,3 +246,27 @@ elem.addEventListener('mousemove', function (e) {
         div.style.top = e.clientY + y + 'px'; 
     } 
 }, true);
+
+
+// Het tweede boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+// var deTweedeOpenBoekButton = document.querySelector("article:nth-of-type(3) section:nth-of-type(1) button:nth-of-type(2)")
+// deTweedeOpenBoekButton.addEventListener("click", tweedeOpenBoek);
+
+// function tweedeOpenBoek() {
+//     var boekOpenTwee = document.querySelector("main article.openTweedeBoek")
+//     boekOpenTwee.classList.add("openTweedeBoekButton");
+// }
+
+
+
+
+
+
+// volgende bladzijde op tweedeboek 
+// var devolgendebladboek2button = document.querySelector("article:nth-of-type(3) section:nth-of-type(2) div:nth-of-type(1) img")
+// devolgendebladboek2button.addEventListener("click", derdeBoek);
+
+// function derdeBoek() {
+//     var boektweeblad = document.querySelector("article:nth-of-type(4)")
+//     boektweeblad.classList.add("openvoglendeblad");
+// }
