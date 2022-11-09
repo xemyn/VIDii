@@ -31,10 +31,12 @@ body {
   display:grid;
   place-items:center center;
   background-color: #ffc80b;
+  cursor: url('/images/hand.png'), auto;
 }
 
 button:not([disabled]) {
-  cursor:pointer;
+  /* cursor:pointer; */
+  cursor: url('../images/hand.png'), auto;
 }
 
 button {
@@ -74,9 +76,12 @@ p{
 } */
 main {
   height: 100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display:
+  flex;
+  justify-content:
+  center;
+  align-items:
+  center;
   position: relative;
   margin:0;
   width: 100%;
@@ -510,7 +515,7 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) img:nth-of-type(
   position: absolute;
   width: 3em;
   height: 3em;
-  right: 8em;
+  right: 10em;
   top:.5em;
   /* animation: strandbalrolt 3s 1;
   animation-delay: 4s;
@@ -588,7 +593,7 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(2) img {
   position: absolute;
   width: 3em;
   height: 3em;
-  left:3em;
+  right:7em;
   top:4.5em
 }
 
@@ -749,9 +754,10 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(6) button:hover::be
   /* height: 1.5em; */
   padding:.5em 1em.5em 1em;
   background-color: white;
-  content: "uiterlijk van nijntje";
+  content: "nijntje 65 jaar oud";
   font-family: var(--body-font);
 }
+
 /* Het zesde boek gaat open wanneer je op de boek klikt in de kast */
 main article.openZesdeBoek {
   display: flex;
@@ -1012,7 +1018,7 @@ article:nth-of-type(2) section:nth-of-type(2) div:nth-of-type(1) p{
   bottom:20%;
   /* background-color: seagreen; */
   right:10%;
-  font-family: var(--body-font);
+  /* font-family: var(--body-font); */
 }
 
 
@@ -1076,7 +1082,7 @@ article:nth-of-type(3) section:nth-of-type(2){
 } */
 
 /* Het tweede open boek met afbeelding aan de rechterkant*/
-article:nth-of-type(3) section:nth-of-type(2) div:nth-of-type(1) img{
+article:nth-of-type(3) section:nth-of-type(2) img{
   /* display: flex;
   justify-content: center;
   align-content: center; */
@@ -1110,7 +1116,6 @@ article:nth-of-type(4) section:nth-of-type(1) h1{
   margin:auto;
   /* margin-left: 3em; */
   /* justify-content: center; */
-
   font-size: 1em;
   /* padding-top: 2em; */
   /* margin-left: 3em; */
@@ -1300,35 +1305,157 @@ article:nth-of-type(8) section:nth-of-type(2) div:nth-of-type(1) img{
   position: absolute;
   top:5em;
   /* left:75%; */
-  right:11%;
+  right:12.5%;
   /* left: 75%; */
   width:25%;
-  height:70%;
+  height:75%;
 }
 
+/* De achtergrondkleurvlak van de vierde geopende boek aan de rechterkant */
 article:nth-of-type(8) section:nth-of-type(2){
   background-color: #F36527;
 }
 
 
 
+/* 9 */
+
+/* De afbeelding aan de rechterkant van het vijfde open boek */
+article:nth-of-type(9) section:nth-of-type(2) div:nth-of-type(1) img{
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  /* align-items: center; */
+  position: absolute;
+  top:5em;
+  /* left:75%; */
+  right:9%;
+  /* left: 75%; */
+  width:30%;
+  height:70%;
+}
+
+article:nth-of-type(10) section:nth-of-type(2) div:nth-of-type(1) img{
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  /* align-items: center; */
+  position: absolute;
+  top:5em;
+  /* left:75%; */
+  right:9%;
+  /* left: 75%; */
+  width:30%;
+  height:70%;
+} 
+article:nth-of-type(9) section:nth-of-type(2){
+  background-color: #00497A;
+}
 
 
+main article.openvoglendeblad5{
+  display: flex;
+}
+main article.openVijfdeBoekButton{
+  display:none;
+}
+main article.terugVorigePagina5{
+  display: none;
+}
 
 
+article:nth-of-type(11){
+  border-radius: 5%;
+  background-color: #8d5131;
+}
 
+article:nth-of-type(11) section{
+  background-color: #00712a;
+  
+}
+article:nth-of-type(11) section:nth-of-type(1){
+  border-radius: 0 0 0 5%;
+}
 
+article:nth-of-type(11) section:nth-of-type(2){
+  border-radius: 0 5% 5% 0;
+}
 
+/* De tekst op linkerbladzijde van de zesde boek */
+article:nth-of-type(11) section:nth-of-type(1) h1{
+  /* justify-content: center;  */
+  /* align-items: center; */
+  /* align-items: left; */
+  /* margin:auto;
+  font-size: 1em; */
+  /* margin:3em; */
+  /* padding-top: 2em; */
+  padding-top: .5em;
+  font-family: var(--titel-font);
+  /* text-align: center; */
+}
+
+article:nth-of-type(11) section:nth-of-type(1) h1:nth-of-type(1) {
+  margin-top: 25%;
+  /* margin-left: 20%; */
+}
+
+article:nth-of-type(11) section:nth-of-type(1) img{
+  position: absolute;
+  left:13%;
+  width:25%;
+  height:65%;
+} 
+
+/* De tekst op rechterbladzijde van de zesde boek */
+article:nth-of-type(11) section:nth-of-type(2) h1{
+  margin:auto;
+  font-size: 1em;
+  padding-top: .5em;
+  font-family: var(--titel-font);
+  text-align: center;
+}
+
+article:nth-of-type(11) section:nth-of-type(2) h1:nth-of-type(1) {
+  margin-top: 70%;
+  /* margin-right: -20%; */
+  left:50%;
+}
+
+article:nth-of-type(11) section:nth-of-type(2) button:nth-of-type(1) img:first-of-type {
+  /* position: absolute ; */
+  top:0;
+  /* bottom: 0; */
+  right:0;
+}
+article:nth-of-type(11) section:nth-of-type(2) img:last-of-type{
+  position: absolute;
+  top:3em;
+  right:12%;
+  width:25%;
+  height:60%;
+} 
+
+main article.openvoglendeblad6{
+  display: flex;
+}
+
+main article.openZesdeBoekButton{
+  display:none;
+}
+main article.terugVorigePagina6{
+  display: none;
+}
 
 /* De bal die in de introductie aan het rollen is */
-main section:nth-of-type(1) div:nth-of-type(1) img {
+.bal div:nth-of-type(1) img {
   position: absolute;
   width: 8em;
   height: 9em;
   top:3em;
   left:-10em;
   z-index: 3;
-  animation: rollen 5s 1 ease-out backwards;
+  animation: rollen 5s 1 ease-out forwards;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
@@ -1342,6 +1469,7 @@ main section:nth-of-type(1) div:nth-of-type(1) img {
   /* 90% {transform: translateX(-3em);} */
   100% {transform: translateX(-2.8em); }
 }
+
 
 /* Boek op de --plank wordt eruit gehaald */
 @keyframes eersteboekopenklaprechts {
@@ -1367,6 +1495,7 @@ main section:nth-of-type(1) div:nth-of-type(1) img {
     box-shadow: 0 0 0 0 rgba(255, 198, 11, 0);}
 }
 
+
 @keyframes strandbalrolt {
 0% {transform: translateX(0);}
 100% {transform: translateX(5em) translateY(15em) rotate(360deg);}
@@ -1380,4 +1509,86 @@ main section:nth-of-type(1) div:nth-of-type(1) img {
   60% {transform: translateX(50em) translateY(15em) rotate(90deg);}
   80% {transform: translateX(70em) translateY(30em) rotate(-90deg);}
   100% {transform: translateX(110em) translateY(30em) rotate(180deg);}
+}
+
+@media (max-width:520px){ /* Jeffrey hielp met media query */
+  main{
+    /* left:-.8em; */
+  }
+  main > *{
+    transform:scale(0.6)
+  }
+/* nijntje die achter de kast tervoorschijnkomt */
+  section:nth-of-type(7){
+    right: -1.3em;
+  }
+  section:nth-of-type(8){
+    top: -17em;
+    left: 7em;
+    right: unset;
+    transform: scale(1.5); /* Jeffrey kwam met het idee om te schalen */
+  }
+  article:nth-of-type(1n+2){
+    height:25%;
+    transform:scale(1.15);
+    /* border: .1em solid #8d5131; */
+    outline: black solid .1em;
+  }
+  img{
+    object-fit:contain;
+  }
+
+  article:nth-of-type(1n+2) section:nth-of-type(2) img {
+    /* top:1em; */
+    /* margin: 0; */
+  }
+  article:nth-of-type(1n+2) section:nth-of-type(1) h1{
+    top:1em;
+    font-size: .5em;
+    padding-top:1em;
+    /* margin: 0; */
+  }
+
+
+  article:nth-of-type(1n+2) section:nth-of-type(1) button:nth-of-type(1)  {
+    width:1em;
+    height:1em;
+    /* margin: 0; */
+  }
+  article:nth-of-type(1n+2) section:nth-of-type(1) button:nth-of-type(1) img {
+    width:3em;
+    height:3em;
+    /* margin: 0; */
+    object-fit:cover;
+    outline:none;
+    border:none'
+  }
+
+  article:nth-of-type(1n+2) section:nth-of-type(2) button:nth-of-type(1)  {
+    width:3em;
+    height:3em;
+    bottom: 0;
+    /* top: 0; */
+    right:0;
+    /* margin: 0; */
+  }
+  article:nth-of-type(1n+2) section:nth-of-type(2) button img {
+    width:3em;
+    height:3em;
+    /* margin: 0; */
+    object-fit:cover;
+    outline:none;
+    border:none;
+    top: 0;
+    right:0;
+  }
+
+  article:nth-of-type(1n+2) section:nth-of-type(1) h1:nth-of-type(1) {
+    margin-top: 10%;
+    /* margin-right: -20%; */
+    left:50%;
+  }
+  .bal {
+    left:-100em;
+  }
 }

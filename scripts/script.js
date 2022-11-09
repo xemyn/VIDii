@@ -82,7 +82,7 @@ deTweedeOpenBoekButton.addEventListener("click", tweedeOpenBoek);
 
 function tweedeOpenBoek() {
     var boekOpenTwee = document.querySelector("article:nth-of-type(3)")
-    boekOpenTwee.classList.toggle("openTweedeBoekButton");
+    boekOpenTwee.className = ''; // Alles in de class vervangen met niks ( ''  ) // Jeffrey kwam hiermee
 }
 
 // Naar de volgende bladzijde op tweedeboek 
@@ -129,9 +129,9 @@ deDerdeOpenBoekButton.addEventListener("click", derdeOpenBoek);
 
 function derdeOpenBoek() {
     var boekOpendrie = document.querySelector("article:nth-of-type(5)")
-    boekOpendrie.classList.toggle("openDerdeBoekButton");
+    boekOpendrie.className = '';
 }
-// Het tweede boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+// Het derde boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
 var terugvolg2 = document.querySelector("article:nth-of-type(6) section:nth-of-type(1) button:nth-of-type(1) img")
 terugvolg2.addEventListener("click", vorigepagina2);
 
@@ -153,7 +153,7 @@ function vierdeBoek() {
 }
 
 
-// Naar de volgende bladzijde op derdeboek 
+// Naar de volgende bladzijde op vierdeboek 
 var devolgendebladboek4button = document.querySelector("article:nth-of-type(7) section:nth-of-type(2) button:nth-of-type(1) img")
 devolgendebladboek4button.addEventListener("click", volgbladvanvierde);
 
@@ -162,15 +162,13 @@ function volgbladvanvierde() {
     boekvierblad.classList.toggle("openvoglendeblad4");
 }
 
-
-
 // Het Vierde boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
 var deVierdeOpenBoekButton = document.querySelector("article:nth-of-type(7) section:nth-of-type(1) button:nth-of-type(1) img")
 deVierdeOpenBoekButton.addEventListener("click", vierdeOpenBoek);
 
 function vierdeOpenBoek() {
     var boekOpenvier = document.querySelector("article:nth-of-type(7)")
-    boekOpenvier.classList.toggle("openVierdeBoekButton");
+    boekOpenvier.className = ''; // Alles in de class vervangen met niks ( ''  ) // Jeffrey kwam hiermee
 }
 // Het tweede boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
 var terugvolg4 = document.querySelector("article:nth-of-type(8) section:nth-of-type(1) button:nth-of-type(1) img")
@@ -188,13 +186,6 @@ function vorigepagina4() {
 
 
 
-
-
-
-
-
-
-
 // Het vijfde boek
 var deVijfdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(5) button")
 deVijfdeBoekButton.addEventListener("click", vijfdeBoek);
@@ -204,14 +195,77 @@ function vijfdeBoek() {
     boekVijf.classList.toggle("openVijfdeBoek");
 }
 
-// Het zesde boek
+// Naar de volgende bladzijde op vijfde boek 
+var devolgendebladboek5button = document.querySelector("article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(1) img")
+devolgendebladboek5button.addEventListener("click", volgbladvanvijfde);
+
+function volgbladvanvijfde() {
+    var boekvijfblad = document.querySelector("article:nth-of-type(10)")
+    boekvijfblad.classList.toggle("openvoglendeblad5");
+}
+
+// Het vijfde boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var terugvolg5 = document.querySelector("article:nth-of-type(10) section:nth-of-type(1) button:nth-of-type(1) img")
+terugvolg5.addEventListener("click", vorigepagina5);
+
+function vorigepagina5() {
+    var boekOpenvijfvolg = document.querySelector("article:nth-of-type(10)")
+    boekOpenvijfvolg.classList.toggle("terugVorigePagina5");
+}
+
+
+// Het Vijfde boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var deVijfdeOpenBoekButton = document.querySelector("article:nth-of-type(9) section:nth-of-type(1) button:nth-of-type(1) img")
+deVijfdeOpenBoekButton.addEventListener("click", vijfdeOpenBoek);
+
+function vijfdeOpenBoek() {
+    var boekOpenvijf = document.querySelector("article:nth-of-type(9)")
+    boekOpenvijf.className = ''; // Alles in de class vervangen met niks ( ''  ) // Jeffrey kwam hiermee
+}
+
+
+
+
+// Het zesde boek openen vanuit de kast
 var deZesdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(6) button")
 deZesdeBoekButton.addEventListener("click", zesdeBoek);
 
 function zesdeBoek() {
-    var boekZes = document.querySelector("article:nth-of-type(7)")
+    var boekZes = document.querySelector("article:nth-of-type(11)")
     boekZes.classList.toggle("openZesdeBoek");
 }
+
+// Naar de volgende bladzijde op zesde boek 
+var devolgendebladboek6button = document.querySelector("article:nth-of-type(11) section:nth-of-type(2) button:nth-of-type(1) img")
+devolgendebladboek6button.addEventListener("click", volgbladvanzesde);
+
+function volgbladvanzesde() {
+    var boekzesblad = document.querySelector("article:nth-of-type(12)")
+    boekzesblad.classList.toggle("openvoglendeblad6");
+}
+
+// Het vzesde boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var terugvolg6 = document.querySelector("article:nth-of-type(12) section:nth-of-type(1) button:nth-of-type(1) img")
+terugvolg6.addEventListener("click", vorigepagina6);
+
+function vorigepagina6() {
+    var boekOpenzesvolg = document.querySelector("article:nth-of-type(12)")
+    boekOpenzesvolg.classList.toggle("terugVorigePagina6");
+}
+
+// Het zesde boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+var deZesdeOpenBoekButton = document.querySelector("article:nth-of-type(11) section:nth-of-type(1) button:nth-of-type(1) img")
+deZesdeOpenBoekButton.addEventListener("click", zesdeOpenBoek);
+
+function zesdeOpenBoek() {
+    var boekOpenZes = document.querySelector("article:nth-of-type(11)")
+    boekOpenZes.className = ''; // Alles in de class vervangen met niks ( ''  ) // Jeffrey kwam hiermee
+}
+
+
+
+
+
 
 
 // link staat hier onder

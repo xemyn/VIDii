@@ -28,11 +28,12 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een bee
 
   ### De eerste versie/schets:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
+  - Kennis maken met javascript om 
   - punt 2
   - nog een punt
   - ...
