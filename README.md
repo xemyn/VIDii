@@ -126,19 +126,19 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, nog een
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/definitiefOntwerpIntroductie" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpOpenenKast" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpKastGeopend" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpEersteBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpTweedeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpTweedeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpDerdeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpDerdeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpVierdeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpVierdeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpVijfdeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpVijfdeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefOntwerpZesdeBoek" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpIntroductie.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpOpenenKast.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpKastGeopend.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpEersteBoek.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpTweedeBoek.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpTweedeBoekVolgende.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpDerdeBoek.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpDerdeBoekVolgende.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVierdeBoek.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVierdeBoekVolgende.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVijfdeBoek.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVijfdeBoekVolgende.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpZesdeBoek.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 

@@ -203,21 +203,12 @@ function zesdeBoek() {
 }
 
 // Naar de volgende bladzijde op zesde boek 
-var devolgendebladboek6button = document.querySelector("article:nth-of-type(11) section:nth-of-type(2) button:nth-of-type(1) img")
+var devolgendebladboek6button = document.querySelector("article:nth-of-type(11) section:nth-of-type(1) button:nth-of-type(1) img")
 devolgendebladboek6button.addEventListener("click", volgbladvanzesde);
 
 function volgbladvanzesde() {
-    var boekzesblad = document.querySelector("article:nth-of-type(12)")
+    var boekzesblad = document.querySelector("article:nth-of-type(11)")
     boekzesblad.classList.toggle("openvoglendeblad6");
-}
-
-// Het zesde boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
-var terugvolg6 = document.querySelector("article:nth-of-type(12) section:nth-of-type(1) button:nth-of-type(1) img")
-terugvolg6.addEventListener("click", vorigepagina6);
-
-function vorigepagina6() {
-    var boekOpenzesvolg = document.querySelector("article:nth-of-type(12)")
-    boekOpenzesvolg.classList.toggle("terugVorigePagina6");
 }
 
 // Het zesde boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina

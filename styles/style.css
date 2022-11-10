@@ -66,13 +66,10 @@ button {
 /********************/
 
 h1 {
-  /* color:var(--color-headings); */
   font-family: var(--titel-font);
 }
 
-
 p{
-  /* font-family: 'titel'; */
   font-family: var(--body-font);
   font-size: 1em;
 }
@@ -88,6 +85,7 @@ main {
 }
 
 /* Sanne heeft geholpen bij het maken van de kast: de diepte/zijkant/achterkant van de kastdeuren */
+/* De kast */
 article:first-of-type {
   width:24em;
   height:25em;
@@ -97,13 +95,13 @@ article:first-of-type {
   position: relative;
 }
 
+/* De bovenkant van de kast */
 article:first-of-type section:nth-of-type(1) {
   position: absolute;
   bottom:calc(100% - 2px);
   left:0;
   width:100%;
 }
-
 section:nth-of-type(1) ul{
   list-style: none;
   margin:0;
@@ -112,27 +110,23 @@ section:nth-of-type(1) ul{
   flex-direction: column;
   align-items:center;
 }
-
 section:nth-of-type(1) ul li:first-of-type{
   width: 26em;
   height: 1em;
   background-color: var(--kast);
   box-shadow: inset 0 0 0 2px  var(--zwartePenseel)
 }
-
 section:nth-of-type(1) ul li:last-of-type{
   width: 25em;
   height:1.5em;
-  /* background-color: #00712a; */
   background-color: var(--kast);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   margin-top:-2px;
 }
 
-/* kastonder */
+/* De onderkant van de kast */
 article:first-of-type section:nth-of-type(2) {
   position: absolute;
-  /* background-color: #00712a; */
   background-color: var(--kast);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   /* kast onder zit tegen article aan met min 2 px vanwege de box schadow */
@@ -141,6 +135,7 @@ article:first-of-type section:nth-of-type(2) {
   width: 25em;
   height:1.5em;
 }
+
 
 /* De linker deur van de kast*/
 section:nth-of-type(3){
@@ -162,10 +157,6 @@ die kant vast staat wanneer het element wordt gedraaid */
   display:grid;
   place-items: center;
 }
-.linkerdeurOpen{
-  /* Hoe de linkerdeur opengaat, gekoppeld met JS*/
-  transform: rotateY(-135deg) skewY(15deg);
-}
 /* De binnenkant van de deur */
 section:nth-of-type(3) div:nth-of-type(1){
   position:absolute;
@@ -185,7 +176,6 @@ section:nth-of-type(3) div:nth-of-type(2) {
   height:.5em;
   transform-origin: center top;
   transform:rotateX(-90deg);
-  /* background-color: #00712a; */
   background-color: var(--kast);
   box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
@@ -212,10 +202,14 @@ section:nth-of-type(3) div:nth-of-type(4) {
   background-size: cover; */
   box-shadow: inset 0 0 0 1px black;
 }
+/* Hoe de linkerdeur opengaat, gekoppeld met JS*/
+.linkerdeurOpen{
+  transform: rotateY(-135deg) skewY(15deg);
+}
+
 
 /* De diepte van de boekenkast */
 section:nth-of-type(5){
-  margin:0;
   position: absolute;
   background-color: var(--kast);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
@@ -227,7 +221,6 @@ section:nth-of-type(5){
 
 /* De planken van de boekenkast */
 section:nth-of-type(6) {
-  margin:0;
   position: absolute;
   background-color: var(--kast);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
@@ -259,6 +252,7 @@ section:nth-of-type(6) ul li::after {
   right:0;
   height:.8em;
 }
+
 
 /* De rechterdeur van de boekenkast */
 section:nth-of-type(4) {
@@ -321,7 +315,6 @@ section:nth-of-type(4) div:nth-of-type(4) {
   inset:0;
   transform:translateZ(-.5em);
   background-color: var(--kast);
-  /* background-color: red; */
   box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De deurklink die zich op de rechterdeur bevindt*/
@@ -335,25 +328,17 @@ section:nth-of-type(4) button{
   bottom: 8em;
   left: .8em;
   backface-visibility: hidden;
-  /* animation: klikopmijopenkast 4s 2 forwards; */
-  /* filter: drop-shadow(0 0 1em white); */
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-
 section:nth-of-type(4) button::before{
   content: "";
   position: absolute;
-  /* background-color: aqua; */
-  background-color:#ffc80b;
-  /* box-shadow: inset 0 0 0 2px black; */
+  background-color:var(--kamerEnDeurklink);
   border: 1px solid var(--zwartePenseel);
   inset:0; 
   border-radius: 50%;
-  /* filter: drop-shadow(0 0 1em white); */
   animation: klikopmijopenkast 2s infinite;
   
 }
-
 /* Wanneer je over de deurklink hovert krijg je tekst te zien zovan CTA klik op de deur */
 section:nth-of-type(4) button:hover::after{
   content: "nieuwsgierig geraakt? neem een kijkje in de boeken van nijntje's kast ";
@@ -362,18 +347,12 @@ section:nth-of-type(4) button:hover::after{
   background-color: var(--teksAchtergrondKleur);
   bottom: calc(100% + .5em); 
   left: calc(100% + .5em);
-  /* left:2em; */
   box-shadow: 0 0 0 1px var(--zwartePenseel);
   width: 12em;
-  /* height: 1.5em; */
   padding:1em;
-  /* filter: drop-shadow(0 0 1em ); */
-
 }
 
-
-
-/* nijntje die achter de kast tervoorschijnkomt */
+/*  Nijntje die achter de kast tervoorschijnkomt */
 section:nth-of-type(7){
   position: absolute;
   z-index: -1;
@@ -387,14 +366,11 @@ section:nth-of-type(7){
   right: -3.2em;
   animation: verstoppertje 5s ease-in forwards;
   animation-iteration-count: 1;
-  /* transition: 2s;  */
-  /* animation-delay: 7s; */
 } 
+
 /* Het schilderij naast de kast */
 section:nth-of-type(8){
-  margin:0;
   position: absolute;
-  /* background-color: var(--tekstAchtergrondKleur); */
   background-color: var(--teksAchtergrondKleur);
   border: 2px solid var(--zwartePenseel);
   z-index: 4;
@@ -404,26 +380,23 @@ section:nth-of-type(8){
   right:-16em;
   border-radius: 2%;
 }
-/* pin 1 */
-section:nth-of-type(8) div:nth-of-type(1){
-  margin:0;
+/* De pins */
+section:nth-of-type(8) div {
   z-index: 5;
   position: absolute;
   border-radius: 50%;
   width: .3em;
   height: .3em;
+}
+/* pin 1 */
+section:nth-of-type(8) div:nth-of-type(1){
+
   background-color: var(--zwartePenseel);
   top:1.5em;
   left: 1em;
 }
 /* pin 2 */
 section:nth-of-type(8) div:nth-of-type(2){
-  margin:0;
-  z-index: 5;
-  position: absolute;
-  border-radius: 50%;
-  width: .3em;
-  height: .3em;
   background-color: var(--zwartePenseel);
   top:1.5em;
   right: 1em;
@@ -431,10 +404,6 @@ section:nth-of-type(8) div:nth-of-type(2){
 /* De introductietekst */
 section:nth-of-type(8) div:nth-of-type(3){
   position: absolute;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  
   top:2em;
   left: 20%;
   text-align: center;
@@ -445,36 +414,28 @@ section:nth-of-type(8) div:nth-of-type(3) h1 {
 }
 /* Introductietekst waar de naam 'nijntje' omgedraaid is vergeleken   */
 section:nth-of-type(8) div:nth-of-type(3) h1 span{
+  /* Sanne geholpen met inline-block, want de tekst draaide eerst niet */
   display:inline-block;
   transform: rotate(180deg);
   padding-bottom: .4em;
-  /* font-size: 1.2em; */
-  /* background-color: aqua; */
 }
 
 
 /* De boeken in de boekenkast */
 section:nth-of-type(9) ul li {
   height:100%;
-  margin:0;
-  padding:0;
   list-style: none;
 }
 /* Het eerste boek op eerste plank */
 article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button{
   position: absolute;
-  /* background-color: blue; */
-  /* background-color: #00497A; */
   background-color: var(--omslagBoek);
-  /* background-color: #F36527; */
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 3em;
   top:1.15em; 
   left: 5em;
   border:none;
-  /* padding: 0;
-  margin:0; */
 }
 /* Het eerste boek gaat omhoog en wordt groter wanneer hover  */
 article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button:hover{
@@ -488,12 +449,10 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button:hover::be
   position: absolute;
   bottom: calc(100% + .5em); 
   left: calc(100% + .5em);
-  /* left:2em; */
   box-shadow: 0 0 0 1px var(--zwartePenseel);
   padding:.5em 1em.5em 1em;
   width:8em;
-  /* height: 1.5em; */
-  background-color: white;
+  background-color: var(--teksAchtergrondKleur);
   content: "geboorte van nijntje";
   font-family: var(--body-font);
 }
@@ -521,28 +480,12 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) img:nth-of-type(
   height: 3em;
   right: 10em;
   top:.5em;
-  /* animation: strandbalrolt 3s 1;
-  animation-delay: 4s;
-  animation-fill-mode: forwards; */
 }
-
-/* Wanneer je op de eerste open boek staat en naar de volgende bladzijde wilt gaan */
-/* main article.openEersteBoekButtonVolg{
-  display:flex;
-} */
-/* Wanneer je op de eerste open boek zit en terug wilt gaat naar de boekenkast */
-/* main article.openEersteBoekButton{
-  display: none;
-} */
-
 
 /* Het tweede boek op de tweede plank */
 section:nth-of-type(9) li:nth-of-type(2) button{
   position: absolute;
-  /* background-color: #00497A; */
   background-color: var(--omslagBoek);
-  /* background-color: palevioletred; */
-  /* background-color: #F36527; */
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 2.5em;
@@ -563,7 +506,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(2) button:hover::be
   left: calc(100% + .5em);
   box-shadow: 0 0 0 1px var(--zwartePenseel);
   width: 8em;
-  /* height: 1.5em; */
   padding:.5em 1em.5em 1em;
   background-color: var(--teksAchtergrondKleur);
   content: "boeken nijntje";
@@ -579,19 +521,6 @@ main article.openTweedeBoekButton {
   display: none;
 }
 
-
-
-
-/* main article.openTweedeBoekButton{
-  display: none;
-} */
-
-/* main article.openTweedeBoekButton{
-  display: none;
-} */
-
-
-
 /* Appel in de kast op de derde plank */
 article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(2) img {
   position: absolute;
@@ -604,9 +533,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(2) img {
 /* Het derde boek in de kast */
 section:nth-of-type(9) li:nth-of-type(3) button{
   position: absolute;
-  /* background-color: paleturquoise; */
-  /* background-color: #F36527; */
-  /* background-color: #00497A; */
   background-color: var(--omslagBoek);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
@@ -629,8 +555,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(3) button:hover::be
   bottom: calc(100% + .5em); 
   right: calc(100% + .5em);
   box-shadow: 0 0 0 1px var(--zwartePenseel);
-  /* width: 8em;
-  height: 1.5em; */
   width:8em;
   padding:.5em 1em.5em 1em;
   background-color: var(--teksAchtergrondKleur);
@@ -653,8 +577,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(3) img:nth-of-type(
 /* Het vierde boek in de boekenkast */
 section:nth-of-type(9) li:nth-of-type(4) button{
   position: absolute;
-  /* background-color:crimson; */
-  /* background-color: #00497A; */
   background-color: var(--omslagBoek);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
@@ -675,8 +597,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(4) button:hover::be
   bottom: calc(100% + .5em); 
   right: calc(100% + .5em);
   box-shadow: 0 0 0 1px var(--zwartePenseel);
-  /* width: 9em;
-  height: 1.5em; */
   padding:.5em 1em.5em 1em;
   width:8em;
   z-index: 10;
@@ -701,8 +621,6 @@ main article.openVierdeBoek {
 /* Het vijfde boek in de boekenkast */
 section:nth-of-type(9) li:nth-of-type(5) button{
   position: absolute;
-  /* background-color: #00497A; */
-  /* background-color:cornflowerblue; */
   background-color: var(--omslagBoek);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
@@ -724,8 +642,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(5) button:hover::be
   bottom: calc(100% + .5em); 
   right: calc(100% + .5em);
   box-shadow: 0 0 0 1px var(--zwartePenseel);
-  /* width: 10em; */
-  /* height: 1.5em; */
   background-color:var(--teksAchtergrondKleur);
   padding:.5em 1em .5em 1em;
   content: "waarom nijntje zo geliefd";
@@ -740,10 +656,7 @@ main article.openVijfdeBoek {
 /* Het zesde boek in de boekenkast */
 section:nth-of-type(9) li:nth-of-type(6) button{
   position: absolute;
-  /* background-color:salmon; */
-  /* background-color: #F36527; */
   background-color: var(--omslagBoek);
-  /* background-color: #00497A; */
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 2.5em;
@@ -757,7 +670,6 @@ section:nth-of-type(9) li:nth-of-type(6) button:hover{
   transform: rotate(0deg) ;
   transition: 1.5s;
   transform: scale(1.2);
-  /* bottom:1.9em; */
 }
 /* Wanneer je over het boek heen hovert verschijnt er tekst waar het overgaat*/
 article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(6) button:hover::before{
@@ -766,7 +678,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(6) button:hover::be
   left: calc(100% + .5em);
   box-shadow: 0 0 0 1px var(--zwartePenseel);
   width: 8em;
-  /* height: 1.5em; */
   padding:.5em 1em.5em 1em;
   background-color: var(--teksAchtergrondKleur);
   content: "nijntje 65 jaar oud";
@@ -781,40 +692,10 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(6) img:nth-of-type(
   right: 8em;
   bottom:0.2em;
 }
-
 /* Het zesde boek gaat open wanneer je op de boek klikt in de kast */
 main article.openZesdeBoek {
   display: flex;
 }
-
-
-
-/* kijjken of het lukt om naar de volgende blazijde te gaan wanneer die op een open bladzijde zit */
-/* main article.openEersteBoekButtonVolg{
-  display: flex;
-} */
-
-/* section:nth-of-type(10){
-  overflow: hidden; 
-  display: block; 
-  width: 100%; 
-}
-
-section:nth-of-type(10) div{
-  position: absolute; 
-  background-image: url(../images/nijntjekijken.svg);
-  background-position: center;
-  background-size:auto;
-  width: 100px; 
-  height: 150px; 
-  right: -20em; 
-  bottom: 0; 
-  z-index: 10;
-} */
-
-
-
-
 
 /* Openboeken */
 /* Dit betekend allemaal hetzelfde behalve de 
@@ -828,9 +709,7 @@ article:nth-of-type(1n+2){
   display: none;
   flex-direction: row;
   border: .5em solid var(--omslagBoek);
-  /* outline: #F36527 solid .25em; */
   outline: var(--zwartePenseel) solid .2em;
-  /* box-shadow: 0em 0em 1em #28242430; */
 }
 /* De bladzijdes van de boeken */
 article:nth-of-type(1n +2) section {
@@ -858,7 +737,6 @@ article:nth-of-type(1n+2) section:nth-of-type(2) button:nth-of-type(1) {
   height: 6em;
   bottom:0;
   right: 0;
-  
   background-color: var(--omslagBoek);
 }
 /* Een omgevouwen bladzijdeflip (afbeelding) op rechterpagina 
@@ -873,23 +751,19 @@ article:nth-of-type(1n+2) section:nth-of-type(2) button:nth-of-type(1) img{
   background-color: inherit;
   top:0;
 }
+
 /* Het midden van de boek waar de scheiding is, 
 hierdoor zie je dat het het tweebladzijdes worden */
 /* Bron = [Jeffrey] */
 article:nth-of-type(1n +2) section:nth-of-type(odd) {
 border-right:.1em solid var(--zwartePenseel);
-/* filter:blur(25px); */
-/* box-shadow: 10px 0px 0px #F36527; */
 }
 
 /* De tekst aan de linkerkant van de pagina */
 article:nth-of-type(1n+2) section:nth-of-type(1) h1{
-  /* justify-content: center; */
-  /* align-items: center; */
   margin:auto;
   font-size: 1em;
   padding-top: 2em;
-  /* margin-left: 3em; */
   font-family: var(--body-font);
   width: 80%;
   text-align: left;
@@ -897,260 +771,74 @@ article:nth-of-type(1n+2) section:nth-of-type(1) h1{
 
 /* Margin van de tekst op de linkerbladzijde van het tweede boek*/
 article:nth-of-type(1n+2) section:nth-of-type(1) h1:nth-of-type(1) {
-  /* margin-top:3em; */
   margin-top: 20%;
 }
 /* Het eerste openboek die verschilt met de rest qua breedte*/
 article:nth-of-type(2){
-  /* position: absolute;
-  background-color: white;
-  z-index: 5; */
   width: 65%;
   height: 80%;
-  /* display: none;
-  flex-direction: row; */
-  /* outline: #F36527 solid .25em; */
-  /* border-right: 5em solid black; */
-  /* box-shadow: 0em 0em 1em #28242430; */
 }
-article:nth-of-type(2) section:nth-of-type(1) {
-  /* background-color: white; */
-  /* width: 50%;
-  height: 100%; */
-  /* border-right: 5em solid black; */
-  /* transform-origin: right center;
-  transition: 1s;
-  transform-style: preserve-3d;
-  animation: 1s eersteboekopenklaplinks .5s forwards; */
-}
-
-article:nth-of-type(2) section:nth-of-type(2){
-  /* background-color: coral; */
-  /* opacity: 0; */
-  /* width: 50%;
-  height: 100%; */
-  /* transform-origin: left center;
-  transition: 1s;
-  transform-style: preserve-3d;
-  animation: 1s eersteboekopenklaprechts .5s forwards; */
-}
-
-/* bladzijdeflip op linkerpagina */
-
-
-/* geen randje bij button met afbeelding erin */
-/* article:nth-of-type(2) section:nth-of-type(1) button:nth-of-type(1){
-  outline: none;
-} */
-
 /* De afbeelding op linkerpagina*/
 article:nth-of-type(2) section:nth-of-type(1) img:nth-of-type(1){
   display: flex;
   justify-content: center;
   position: absolute;
-  /* margin-top:3em; */
-  /* bottom: calc(100% + 2em); */
   top:5em;
-  /* background-color: white; */
-  /* background-image: url(../images/eersteboekafblinks.png);
-  background-position: center;
-  background-size: cover; */
   left:10%;
   width: 30%;
   height: 55%;
-  /* height: 25em;
-  width:17.5em; */
 }
-
-
 
 /* De tekst op de linkerpagina van het eerste boek. */
-article:nth-of-type(2) section:nth-of-type(1)  p{
-  /* flex-direction: row; */
-  /* position: absolute;
-  justify-content: center; */
-  
-  /* right: 15%; */
-  /* width:80%; */
-  /* background-color: seagreen; */
-  /* align-items: center; */
-  /* left:5%; */
+article:nth-of-type(2) section:nth-of-type(1) p{
   text-align: left;
-  /* right:7.5%;
-  width: 35%;
-  height: 65%; */
-  /* margin: auto; */
   position: absolute;
-  /* top: calc(100% - 5em); */
   top:75%;
   width:28%;
-  /* text-align: center; */
-  /* background-color: seagreen; */
-  /* right:7.5%;
-  width: 35%;
-  height: 65%; */
   left:10%;
   font-family: var(--body-font);
 }
 
-/* bladzijdeflip op rechterpagina */
-/* article:nth-of-type(2) section:nth-of-type(2) button:nth-of-type(1){
-  position: absolute;
-  bottom:0;
-  right:0em;
-  border: none;
-  border-style: solid;
-  border-width: 0 0 5em 5em;
-  border-color: #F36527 #F36527 #F36527 transparent;
-} */
-
-/* de div */
-/* article:nth-of-type(2) section:nth-of-type(2) div:nth-of-type(1) {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top:5em;
-  right:10%;
-  width: 30%;
-  height: 55%;
-  font-family: var(--body-font);
-} */
 
 /* De afbeelding op rechterpagina van het eerste boek*/
 article:nth-of-type(2) section:nth-of-type(2) img{
   display: flex;
   justify-content: center;
   position: absolute;
-  /* margin-top:3em; */
-  /* bottom: calc(100% + 2em); */
   top:5em;
-  /* background-color: white; */
-  /* background-image: url(../images/eersteboekafblinks.png);
-  background-position: center;
-  background-size: cover; */
   right:10%;
   width: 30%;
   height: 55%;
-  /* height: 25em;
-  width:17.5em; */
 }
 
 /* De tekst op de rechterpagina van het eerste boek */
-article:nth-of-type(2) section:nth-of-type(2)  p{
+article:nth-of-type(2) section:nth-of-type(2) p{
   position: absolute;
-  /* margin: auto; */
   width:28%;
   text-align: left;
   font-family: var(--body-font);
   top:75%;
-  /* bottom:20%; */
-  /* background-color: seagreen; */
   right:11%;
-  /* font-family: var(--body-font); */
-}
-
-
-/* article:nth-of-type(3){
-  position: absolute;
-  background-color: white;
-  z-index: 5;
-  width: 80%;
-  height: 80%;
-  display: none;
-  flex-direction: row;
-} */
-
-
-/* Achtergrondkleur van de rechterbladzijde */
+} 
+/* Achtergrondkleur van de rechterbladzijde tweede boek*/
 article:nth-of-type(3) section:nth-of-type(2){
-  /* background-color: coral; */
-  /* opacity: 0; */
   background-color: var(--kleurvlakBladzijdeBlauw);
-  /* width: 50%;
-  height: 100%; */
-  /* display: flex; */
-  /* transform-origin: left center;
-  transition: 1s;
-  transform-style: preserve-3d;
-  animation: 1s eersteboekopenklaprechts .5s forwards; */
 }
-
-/* bladzijdeflip op rechterpagina */
-/* article:nth-of-type(3) section:nth-of-type(2) button:nth-of-type(1){
-  position: absolute;
-  border: none;
-  width: 6em;
-  height: 6em;
-  bottom:0;
-  right: 0;
-  border-color: #F36527 #F36527 #F36527 transparent;
-} */
-
-/* article:nth-of-type(3) section:nth-of-type(2) button:nth-of-type(1) img{
-  position: absolute;
-  border: none;
-  width: inherit;
-  height: inherit;
-  background-color: #F36527;
-  bottom:inherit;
-  right: inherit;
-  border-color: #F36527 #F36527 #F36527 transparent;
-} */
-
-
-/* article:nth-of-type(3) section:nth-of-type(1) button:nth-of-type(1) img{
-  position: absolute;
-  border: none;
-  width: 6em;
-  height: 6em;
-
-  background-color: #F36527;
-  top:0;
-  left: 0;
-} */
 
 /* Het tweede open boek met afbeelding aan de rechterkant*/
 article:nth-of-type(3) section:nth-of-type(2) img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:10%;
-  /* left: 75%; */
   width:30%;
   height:70%;
 }
-
-
-/* main article.article:nth-of-type(3).openTweedeBoek{
-  display:none;
-} */
-
-/* Testen of die naar de volgende bladzijde kan gaan, dit is een extra article */
-/* article:nth-of-type(4){
-  position: absolute;
-  z-index: 5;
-  width: 70%;
-  height: 70%;
-  display: none;
-  flex-direction: row;
-} */
-
 /* De tekst op de tweede geopende boek maar de volgende bladzijde  */
 article:nth-of-type(4) section:nth-of-type(1) h1{
   margin:auto;
-  /* margin-left: 3em; */
-  /* justify-content: center; */
   font-size: 1em;
-  /* padding-top: 2em; */
-  /* margin-left: 3em; */
   font-family: var(--body-font);
   width: 80%;
-
-  
 }
 
 article:nth-of-type(4) section:nth-of-type(2) img{
@@ -1310,7 +998,6 @@ article:nth-of-type(7) section:nth-of-type(2) img{
 }
 /* De achtergrondkleurvlak van de vierdede geopende boek aan de rechterkant */
 article:nth-of-type(7) section:nth-of-type(2){
-  /* background-color: #00497A; */
   background-color: var(--kleurvlakBladzijdeRood);
 }
 
@@ -1443,12 +1130,7 @@ article:nth-of-type(11) section:nth-of-type(1) h1:nth-of-type(1) {
   /* margin-left: 20%; */
 }
 
-article:nth-of-type(11) section:nth-of-type(1) img{
-  position: absolute;
-  left:13%;
-  width:25%;
-  height:65%;
-} 
+
 
 /* De tekst op rechterbladzijde van de zesde boek */
 article:nth-of-type(11) section:nth-of-type(2) h1{
@@ -1465,12 +1147,6 @@ article:nth-of-type(11) section:nth-of-type(2) h1:nth-of-type(1) {
   left:50%;
 }
 
-article:nth-of-type(11) section:nth-of-type(2) button:nth-of-type(1) img:first-of-type {
-  /* position: absolute ; */
-  /* top:0; */
-  /* bottom: 0; */
-  /* right:0; */
-}
 article:nth-of-type(11) section:nth-of-type(2) img{
   position: absolute;
   top:3em;
@@ -1479,16 +1155,14 @@ article:nth-of-type(11) section:nth-of-type(2) img{
   height:85%;
 } 
 
-main article.openvoglendeblad6{
-  display: flex;
-}
 
 main article.openZesdeBoekButton{
   display:none;
 }
-main article.terugVorigePagina6{
+main article.zesdeOpenBoek{
   display: none;
 }
+
 
 /* De bal die in de introductie aan het rollen is */
 .bal img {
