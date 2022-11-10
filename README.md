@@ -28,8 +28,6 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een bee
 
   ### De eerste versie/schets:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
-  
-
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
@@ -47,25 +45,25 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een bee
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <img src="readme-images/eersteVoortgangFeedback1.png" width="375px" alt="eerste feedback">
+  <img src="readme-images/eersteVoortgangFeedback2.png" width="375px" alt="tweede  feedback">
 
-  ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  ### Bevinding 1 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback1.png" width="375px" alt="eerste feedback">
 
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  ### Bevinding 2 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback2.png" width="375px" alt="tweede  feedback">
+
+  ### Bevinding 3 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback3.png" width="375px" alt="derde feedback">
+
+  ### Bevinding 4 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback4.png" width="375px" alt="vierde  feedback">
+
+  ### Bevinding 5 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback5.png" width="375px" alt="vijfde  feedback">
 
 
-
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
 
 </details>
 
@@ -142,11 +140,13 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een bee
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
 
+
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
+  Wat ik erg lastig vond is vooral het onderzoeken, kijken en proberen van 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>

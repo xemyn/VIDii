@@ -30,7 +30,7 @@ body {
   overflow: hidden; 
   display:grid;
   place-items:center center;
-  background-color: #ffc80b;
+  background-color: var(--kamerEnDeurklink);
   cursor: url('/images/hand.png'), auto;
 }
 
@@ -49,9 +49,17 @@ button {
 /*********************/
 
 :root {
-  --color-headings:crimson;
+  /* --color-headings:crimson; */
+  /* Fonts custom properties */
   --titel-font:'titel';
   --body-font: 'body';
+  /* Kleuren custom properties */
+  --zwartePenseel: #000;
+  --teksAchtergrondKleur: #fff;
+  --kast: #00712a; 
+  --omslagBoek: #8d5131;
+  --kleurvlakBladzijde: #00497A;
+  --kamerEnDeurklink: #ffc80b;
 }
 
 
@@ -91,9 +99,10 @@ article:first-of-type {
   width:24em;
   height:25em;
   top:calc(100%-1em);
-  background-color: #00712a;
+  /* background-color: #00712a; */
+  background-color: var(--kast);
   /* border: 2px solid black; */
-  box-shadow: inset 0 0 0 2px black;
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   position: relative;
 }
 
@@ -116,23 +125,25 @@ section:nth-of-type(1) ul{
 section:nth-of-type(1) ul li:first-of-type{
   width: 26em;
   height: 1em;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px  var(--zwartePenseel)
 }
 
 section:nth-of-type(1) ul li:last-of-type{
   width: 25em;
   height:1.5em;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  /* background-color: #00712a; */
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   margin-top:-2px;
 }
 
 /* kastonder */
 article:first-of-type section:nth-of-type(2) {
   position: absolute;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  /* background-color: #00712a; */
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   /* kast onder zit tegen article aan met min 2 px vanwege de box schadow */
   top: calc(100% - 2px);
   left: -.5em;
@@ -144,8 +155,8 @@ article:first-of-type section:nth-of-type(2) {
 section:nth-of-type(3){
   z-index: 2;
   position: absolute;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   /* de breedte van de deur plus 1 px want zo vermijd je het gat tussen de deuren, 
   hierdoor overlappen we elkaar wel een beetje */
   width:calc(10em + 1px);
@@ -167,7 +178,7 @@ die kant vast staat wanneer het element wordt gedraaid */
 /* De binnenkant van de deur */
 section:nth-of-type(3) div:nth-of-type(1){
   position:absolute;
-  box-shadow: inset 0 0 0 2px black;
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 7.5em;
   height:20em;
   /* doordat de section een 3d transform style heeft, weet de section dat waneer 
@@ -183,8 +194,9 @@ section:nth-of-type(3) div:nth-of-type(2) {
   height:.5em;
   transform-origin: center top;
   transform:rotateX(-90deg);
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 1px black;
+  /* background-color: #00712a; */
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De zijkant van de linker deur*/
 section:nth-of-type(3) div:nth-of-type(3) {
@@ -195,7 +207,7 @@ section:nth-of-type(3) div:nth-of-type(3) {
   width:.5em;
   transform-origin: right center;
   transform:rotateY(-90deg);
-  background-color: #00712a;
+  background-color: var(--kast);
   box-shadow: inset 0 0 0 1px black;
 }
 /* De achterkant van linkerdeur */
@@ -203,7 +215,7 @@ section:nth-of-type(3) div:nth-of-type(4) {
   position:absolute;
   inset:0;
   transform:translateZ(-.5em);
-  background-color: #00712a;
+  background-color: var(--kast);
   /* background-image: url(../images/ladder.png);
   background-position: center;
   background-size: cover; */
@@ -214,8 +226,8 @@ section:nth-of-type(3) div:nth-of-type(4) {
 section:nth-of-type(4){
   margin:0;
   position: absolute;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 20em;
   height:25em;
   top:0;
@@ -226,8 +238,8 @@ section:nth-of-type(4){
 section:nth-of-type(5) {
   margin:0;
   position: absolute;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 20em;
   height:25em;
   top:0;
@@ -248,8 +260,8 @@ section:nth-of-type(5) ul li {
 }
 section:nth-of-type(5) ul li::after {
   content:"";
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   position:absolute;
   bottom:0;
   left:0;
@@ -261,8 +273,8 @@ section:nth-of-type(5) ul li::after {
 section:nth-of-type(6) {
   z-index: 2;
   position: absolute;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width:calc(10em + 1px);
   height:25em;
   top:0;
@@ -282,8 +294,8 @@ section:nth-of-type(6).rechterdeurOpen{
 /* De binnenkant van de rechterdeur */
 section:nth-of-type(6) div:nth-of-type(1) {
   position: absolute;
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 7.5em;
   height:20em;
   backface-visibility: hidden;
@@ -297,8 +309,8 @@ section:nth-of-type(6) div:nth-of-type(2) {
   height:.5em;
   transform-origin: center top;
   transform:rotateX(-90deg);
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 1px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De zijkant van de rechterdeur */
 section:nth-of-type(6) div:nth-of-type(3) {
@@ -309,17 +321,17 @@ section:nth-of-type(6) div:nth-of-type(3) {
   width:.5em;
   transform-origin: left center;
   transform:rotateY(90deg);
-  background-color: #00712a;
-  box-shadow: inset 0 0 0 1px black;
+  background-color: var(--kast);
+  box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De achterkant van de rechterdeur*/
 section:nth-of-type(6) div:nth-of-type(4) {
   position:absolute;
   inset:0;
   transform:translateZ(-.5em);
-  background-color: #00712a;
+  background-color: var(--kast);
   /* background-color: red; */
-  box-shadow: inset 0 0 0 1px black;
+  box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De deurklink die zich op de rechterdeur bevindt*/
 section:nth-of-type(6) button{
@@ -342,8 +354,8 @@ section:nth-of-type(6) button::before{
   position: absolute;
   /* background-color: aqua; */
   background-color:#ffc80b;
-  box-shadow: inset 0 0 0 2px black;
-  border: 1px solid black;
+  /* box-shadow: inset 0 0 0 2px black; */
+  border: 1px solid var(--zwartePenseel);
   inset:0; 
   border-radius: 50%;
   /* filter: drop-shadow(0 0 1em white); */
@@ -356,11 +368,11 @@ section:nth-of-type(6) button:hover::after{
   content: "nieuwsgierig geraakt? neem een kijkje in de boeken van nijntje's kast ";
   font-family: var(--body-font);
   position: absolute;
-  background-color: white;
+  background-color: var(--tekstAchtergrondKleur);
   bottom: calc(100% + .5em); 
   left: calc(100% + .5em);
   /* left:2em; */
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px var(--zwartePenseel);
   width: 12em;
   /* height: 1.5em; */
   padding:1em;
@@ -391,8 +403,9 @@ section:nth-of-type(7){
 section:nth-of-type(8){
   margin:0;
   position: absolute;
-  background-color: white;
-  border: 2px solid black;
+  /* background-color: var(--tekstAchtergrondKleur); */
+  background-color: var(--teksAchtergrondKleur);
+  border: 2px solid var(--zwartePenseel);
   z-index: 4;
   width:10em;
   height:9em; 
@@ -408,7 +421,7 @@ section:nth-of-type(8) div:nth-of-type(1){
   border-radius: 50%;
   width: .3em;
   height: .3em;
-  background-color: black;
+  background-color: var(--zwartePenseel);
   top:1.5em;
   left: 1em;
 }
@@ -420,7 +433,7 @@ section:nth-of-type(8) div:nth-of-type(2){
   border-radius: 50%;
   width: .3em;
   height: .3em;
-  background-color: black;
+  background-color: var(--zwartePenseel);
   top:1.5em;
   right: 1em;
 }
@@ -430,11 +443,11 @@ section:nth-of-type(8) div:nth-of-type(3){
   /* display: flex;
   justify-content: center;
   align-items: center; */
+  
   top:2em;
   left: 25%;
   text-align: center;
   width: 50%;
-  /* background-color: firebrick ; */
 }
 section:nth-of-type(8) div:nth-of-type(3) h1 {
   font-size: 1.1em;
@@ -461,9 +474,9 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button{
   position: absolute;
   /* background-color: blue; */
   /* background-color: #00497A; */
-  background-color: #8d5131;
+  background-color: var(--omslagBoek);
   /* background-color: #F36527; */
-  box-shadow: inset 0 0 0 2px black;
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 3em;
   top:1.15em; 
@@ -485,7 +498,7 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button:hover::be
   bottom: calc(100% + .5em); 
   left: calc(100% + .5em);
   /* left:2em; */
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px var(--zwartePenseel);
   padding:.5em 1em.5em 1em;
   width:8em;
   /* height: 1.5em; */
@@ -536,10 +549,10 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) img:nth-of-type(
 section:nth-of-type(9) li:nth-of-type(2) button{
   position: absolute;
   /* background-color: #00497A; */
-  background-color: #8d5131;
+  background-color: var(--omslagBoek);
   /* background-color: palevioletred; */
   /* background-color: #F36527; */
-  box-shadow: inset 0 0 0 2px black;
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 2.5em;
   top:6.65em; 
@@ -557,11 +570,11 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(2) button:hover::be
   position: absolute;
   bottom: calc(100% + .5em); 
   left: calc(100% + .5em);
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px var(--zwartePenseel);
   width: 8em;
   /* height: 1.5em; */
   padding:.5em 1em.5em 1em;
-  background-color: white;
+  background-color: var(--teksAchtergrondKleur);
   content: "boeken nijntje";
   font-family: var(--body-font);
 }
@@ -603,8 +616,8 @@ section:nth-of-type(9) li:nth-of-type(3) button{
   /* background-color: paleturquoise; */
   /* background-color: #F36527; */
   /* background-color: #00497A; */
-  background-color: #8d5131;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--omslagBoek);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 2.5em;
   top:11.5em; 
@@ -624,12 +637,12 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(3) button:hover::be
   position: absolute;
   bottom: calc(100% + .5em); 
   right: calc(100% + .5em);
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px var(--zwartePenseel);
   /* width: 8em;
   height: 1.5em; */
   width:8em;
   padding:.5em 1em.5em 1em;
-  background-color: white;
+  background-color: var(--teksAchtergrondKleur);
   content: "nijntje of miffy";
   font-family: var(--body-font);
 }
@@ -651,8 +664,8 @@ section:nth-of-type(9) li:nth-of-type(4) button{
   position: absolute;
   /* background-color:crimson; */
   /* background-color: #00497A; */
-  background-color: #8d5131;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--omslagBoek);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 2.5em;
   bottom:10.85em; 
@@ -670,12 +683,12 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(4) button:hover::be
   position: absolute;
   bottom: calc(100% + .5em); 
   right: calc(100% + .5em);
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px var(--zwartePenseel);
   /* width: 9em;
   height: 1.5em; */
   padding:.5em 1em.5em 1em;
   width:8em;
-  background-color: white;
+  background-color: var(--teksAchtergrondKleur);
   content: "wereldwijd beroemd";
   font-family: var(--body-font);
 }
@@ -688,8 +701,8 @@ section:nth-of-type(9) li:nth-of-type(5) button{
   position: absolute;
   /* background-color: #00497A; */
   /* background-color:cornflowerblue; */
-  background-color: #8d5131;
-  box-shadow: inset 0 0 0 2px black;
+  background-color: var(--omslagBoek);
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 2.5em;
   bottom:5.85em; 
@@ -708,10 +721,10 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(5) button:hover::be
   position: absolute;
   bottom: calc(100% + .5em); 
   right: calc(100% + .5em);
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px var(--zwartePenseel);
   /* width: 10em; */
   /* height: 1.5em; */
-  background-color: white;
+  background-color:var(--teksAchtergrondKleur);
   padding:.5em 1em .5em 1em;
   content: "waarom nijntje zo geliefd";
   width:8em;
@@ -727,9 +740,9 @@ section:nth-of-type(9) li:nth-of-type(6) button{
   position: absolute;
   /* background-color:salmon; */
   /* background-color: #F36527; */
-  background-color: #8d5131;
+  background-color: var(--omslagBoek);
   /* background-color: #00497A; */
-  box-shadow: inset 0 0 0 2px black;
+  box-shadow: inset 0 0 0 2px var(--zwartePenseel);
   width: 1em;
   height: 2.5em;
   bottom: .9em; 
@@ -749,11 +762,11 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(6) button:hover::be
   position: absolute;
   bottom: calc(100% + .5em); 
   left: calc(100% + .5em);
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px var(--zwartePenseel);
   width: 8em;
   /* height: 1.5em; */
   padding:.5em 1em.5em 1em;
-  background-color: white;
+  background-color: var(--teksAchtergrondKleur);
   content: "nijntje 65 jaar oud";
   font-family: var(--body-font);
 }
@@ -803,14 +816,14 @@ article:nth-of-type(1n+2){
   height: 70%;
   display: none;
   flex-direction: row;
-  border: .5em solid #8d5131;
+  border: .5em solid var(--omslagBoek);
   /* outline: #F36527 solid .25em; */
-  outline: black solid .2em;
+  outline: var(--zwartePenseel) solid .2em;
   /* box-shadow: 0em 0em 1em #28242430; */
 }
 /* De bladzijdes van de boeken */
 article:nth-of-type(1n +2) section {
-  background-color: white;
+  background-color: var(--teksAchtergrondKleur);
   width: 50%;
   height: 100%;
 }
@@ -821,7 +834,7 @@ article:nth-of-type(1n+2) section:nth-of-type(1) button:nth-of-type(1) img{
   border: none;
   width: 6em;
   height: 6em;
-  background-color: #8d5131;
+  background-color: var(--omslagBoek);
   top:0;
   left: 0;
 }
@@ -834,7 +847,8 @@ article:nth-of-type(1n+2) section:nth-of-type(2) button:nth-of-type(1) {
   height: 6em;
   bottom:0;
   right: 0;
-  background-color: #8d5131;
+  
+  background-color: var(--omslagBoek);
 }
 /* Een omgevouwen bladzijdeflip (afbeelding) op rechterpagina 
 waardoor je naar de volgende pagina kan */
@@ -846,12 +860,13 @@ article:nth-of-type(1n+2) section:nth-of-type(2) button:nth-of-type(1) img{
   bottom:inherit;
   right: inherit;
   background-color: inherit;
+  top:0;
 }
 /* Het midden van de boek waar de scheiding is, 
 hierdoor zie je dat het het tweebladzijdes worden */
 /* Bron = [Jeffrey] */
 article:nth-of-type(1n +2) section:nth-of-type(odd) {
-border-right:.1em solid black;
+border-right:.1em solid var(--zwartePenseel);
 /* filter:blur(25px); */
 /* box-shadow: 10px 0px 0px #F36527; */
 }
@@ -917,7 +932,7 @@ article:nth-of-type(2) section:nth-of-type(2){
 } */
 
 /* De afbeelding op linkerpagina*/
-article:nth-of-type(2) section:nth-of-type(1) div:nth-of-type(1) img{
+article:nth-of-type(2) section:nth-of-type(1) img:nth-of-type(1){
   display: flex;
   justify-content: center;
   position: absolute;
@@ -938,7 +953,7 @@ article:nth-of-type(2) section:nth-of-type(1) div:nth-of-type(1) img{
 
 
 /* De tekst op de linkerpagina van het eerste boek. */
-article:nth-of-type(2) section:nth-of-type(1) div:nth-of-type(1) p{
+article:nth-of-type(2) section:nth-of-type(1)  p{
   /* flex-direction: row; */
   /* position: absolute;
   justify-content: center; */
@@ -990,7 +1005,7 @@ article:nth-of-type(2) section:nth-of-type(1) div:nth-of-type(1) p{
 } */
 
 /* De afbeelding op rechterpagina van het eerste boek*/
-article:nth-of-type(2) section:nth-of-type(2) div:nth-of-type(1) img{
+article:nth-of-type(2) section:nth-of-type(2) img{
   display: flex;
   justify-content: center;
   position: absolute;
@@ -1009,7 +1024,7 @@ article:nth-of-type(2) section:nth-of-type(2) div:nth-of-type(1) img{
 }
 
 /* De tekst op de rechterpagina van het eerste boek */
-article:nth-of-type(2) section:nth-of-type(2) div:nth-of-type(1) p{
+article:nth-of-type(2) section:nth-of-type(2)  p{
   position: absolute;
   margin: auto;
   width:30%;
@@ -1037,7 +1052,7 @@ article:nth-of-type(2) section:nth-of-type(2) div:nth-of-type(1) p{
 article:nth-of-type(3) section:nth-of-type(2){
   /* background-color: coral; */
   /* opacity: 0; */
-  background-color: #00497A;
+  background-color: var(--kleurvlakBladzijde);
   /* width: 50%;
   height: 100%; */
   /* display: flex; */
@@ -1142,7 +1157,7 @@ article:nth-of-type(4) section:nth-of-type(2) div:nth-of-type(1) img{
 article:nth-of-type(4) section:nth-of-type(2){
   /* background-color: coral; */
   /* opacity: 0; */
-  background-color: #00497A;
+  background-color: var(--kleurvlakBladzijde);
   width: 50%;
   height: 100%;
   /* display: flex; */
@@ -1243,7 +1258,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1) img{
 
 /* De achtergrondkleurvlak van de derde geopende boek aan de rechterkant */
 article:nth-of-type(5) section:nth-of-type(2){
-  background-color: #00497A;
+  background-color: var(--kleurvlakBladzijde);
 }
 
 /* De afbeelding aan rechterkant op de volgende pagina van het derde boek  */
@@ -1297,7 +1312,7 @@ main article.terugVorigePagina4{
   display: none;
 }
 /* De afbeelding aan rechterkant op de volgende pagina van het vierde boek  */
-article:nth-of-type(8) section:nth-of-type(2) div:nth-of-type(1) img{
+article:nth-of-type(8) section:nth-of-type(2) img{
   /* display: flex;
   justify-content: center;
   align-content: center; */
@@ -1321,7 +1336,7 @@ article:nth-of-type(8) section:nth-of-type(2){
 /* 9 */
 
 /* De afbeelding aan de rechterkant van het vijfde open boek */
-article:nth-of-type(9) section:nth-of-type(2) div:nth-of-type(1) img{
+article:nth-of-type(9) section:nth-of-type(2)  img{
   /* display: flex;
   justify-content: center;
   align-content: center; */
@@ -1333,6 +1348,13 @@ article:nth-of-type(9) section:nth-of-type(2) div:nth-of-type(1) img{
   /* left: 75%; */
   width:30%;
   height:70%;
+}
+
+article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(1) img:first-of-type {
+  /* position: absolute ; */
+  top:0;
+  /* bottom: 0; */
+  right:0;
 }
 
 article:nth-of-type(10) section:nth-of-type(2) div:nth-of-type(1) img{
@@ -1349,7 +1371,7 @@ article:nth-of-type(10) section:nth-of-type(2) div:nth-of-type(1) img{
   height:70%;
 } 
 article:nth-of-type(9) section:nth-of-type(2){
-  background-color: #00497A;
+  background-color: var(--kleurvlakBladzijde);
 }
 
 
@@ -1366,11 +1388,11 @@ main article.terugVorigePagina5{
 
 article:nth-of-type(11){
   border-radius: 5%;
-  background-color: #8d5131;
+  background-color: var(--omslagBoek);
 }
 
 article:nth-of-type(11) section{
-  background-color: #00712a;
+  background-color:var(--kast);
   
 }
 article:nth-of-type(11) section:nth-of-type(1){
@@ -1431,9 +1453,9 @@ article:nth-of-type(11) section:nth-of-type(2) button:nth-of-type(1) img:first-o
 article:nth-of-type(11) section:nth-of-type(2) img:last-of-type{
   position: absolute;
   top:3em;
-  right:12%;
-  width:25%;
-  height:60%;
+  right:-2.5em;
+  width:55%;
+  height:85%;
 } 
 
 main article.openvoglendeblad6{
@@ -1526,20 +1548,21 @@ main article.terugVorigePagina6{
     top: -17em;
     left: 7em;
     right: unset;
-    transform: scale(1.5); /* Jeffrey kwam met het idee om te schalen */
+    transform: scale(1.5); /* Brono: [Jeffrey kwam met het idee om te schalen] */
   }
   article:nth-of-type(1n+2){
     height:25%;
     transform:scale(1.15);
     /* border: .1em solid #8d5131; */
-    outline: black solid .1em;
+    outline: var(--zwartePenseel) solid .1em;
   }
+  /* Brron: [Jeffrey kwam met idee object fit] */
   img{
     object-fit:contain;
   }
 
   article:nth-of-type(1n+2) section:nth-of-type(2) img {
-    /* top:1em; */
+    /* top:-10em; */
     /* margin: 0; */
   }
   article:nth-of-type(1n+2) section:nth-of-type(1) h1{
@@ -1554,6 +1577,7 @@ main article.terugVorigePagina6{
     width:1em;
     height:1em;
     /* margin: 0; */
+
   }
   article:nth-of-type(1n+2) section:nth-of-type(1) button:nth-of-type(1) img {
     width:3em;
@@ -1562,6 +1586,7 @@ main article.terugVorigePagina6{
     object-fit:cover;
     outline:none;
     border:none'
+
   }
 
   article:nth-of-type(1n+2) section:nth-of-type(2) button:nth-of-type(1)  {
@@ -1590,5 +1615,26 @@ main article.terugVorigePagina6{
   }
   .bal {
     left:-100em;
+  }
+
+  article:nth-of-type(2) p {
+    font-size: .5em;
+
+  }
+
+  article:nth-of-type(2) section:nth-of-type(1) img:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:2em;
+    left:10%;
+    width: 30%;
+    height: 55%;
+    /* height: 25em;
+    width:17.5em; */
+  }
+  article:nth-of-type(1n+2) section:nth-of-type(2) img  {
+    top:0;
+    /* margin: 0; */
   }
 }

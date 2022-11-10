@@ -49,7 +49,10 @@ function toggleDoor() {
 //     boekOpenEenVolg.classList.add("openEersteBoekButtonVolg");
 // }
 
-// Het eerste boek die je aanklikt zodat je een boek opent
+/////////////////////////////
+// Boek een
+/////////////////////////////
+// Het eerste boek die je aanklikt vanuit de plank op de kast
 var deEersteBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(1) button")
 deEersteBoekButton.addEventListener("click", eersteBoek);
 
@@ -66,9 +69,10 @@ function eersteOpenBoek() {
     boekOpenEen.classList.toggle("openEersteBoekButton");
 }
 
-
-
-// Het tweede boek die je opent 
+/////////////////////////////
+// Boek twee
+/////////////////////////////
+// Het tweede boek die je aanklikt vanuit de plank op de kast
 var deTweedeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(2) button")
 deTweedeBoekButton.addEventListener("click", tweedeBoek);
 
@@ -104,8 +108,10 @@ function vorigepagina() {
 }
 
 
-
-// Het Derde boek
+/////////////////////////////
+// Boek drie
+/////////////////////////////
+// Het derde boek die je aanklikt vanuit de plank op de kast
 var deDerdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(3) button")
 deDerdeBoekButton.addEventListener("click", derdeBoek);
 
@@ -114,7 +120,7 @@ function derdeBoek() {
     boekDrie.classList.toggle("openDerdeBoek");
 }
 
-// Naar de volgende bladzijde op derdeboek 
+// Het derde boek is geopend en je wilt naar de volgende bladzijde 
 var devolgendebladboek3button = document.querySelector("article:nth-of-type(5) section:nth-of-type(2) button:nth-of-type(1) img")
 devolgendebladboek3button.addEventListener("click", volgblad2);
 
@@ -141,9 +147,10 @@ function vorigepagina2() {
 }
 
 
-
-
-// Het Vierde boek
+/////////////////////////////
+// Boek vier
+/////////////////////////////
+// Het vierde boek die je aanklikt vanuit de plank op de kast
 var deVierdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(4) button")
 deVierdeBoekButton.addEventListener("click", vierdeBoek);
 
@@ -151,9 +158,7 @@ function vierdeBoek() {
     var boekVier = document.querySelector("article:nth-of-type(7)")
     boekVier.classList.toggle("openVierdeBoek");
 }
-
-
-// Naar de volgende bladzijde op vierdeboek 
+// Het vierde boek is geopend en je wilt naar de volgende bladzijde
 var devolgendebladboek4button = document.querySelector("article:nth-of-type(7) section:nth-of-type(2) button:nth-of-type(1) img")
 devolgendebladboek4button.addEventListener("click", volgbladvanvierde);
 
@@ -170,7 +175,7 @@ function vierdeOpenBoek() {
     var boekOpenvier = document.querySelector("article:nth-of-type(7)")
     boekOpenvier.className = ''; // Alles in de class vervangen met niks ( ''  ) // Jeffrey kwam hiermee
 }
-// Het tweede boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+// Het vierde boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
 var terugvolg4 = document.querySelector("article:nth-of-type(8) section:nth-of-type(1) button:nth-of-type(1) img")
 terugvolg4.addEventListener("click", vorigepagina4);
 
@@ -180,13 +185,10 @@ function vorigepagina4() {
 }
 
 
-
-
-
-
-
-
-// Het vijfde boek
+/////////////////////////////
+// Boek vijf
+/////////////////////////////
+// Het vijfde boek die je aanklikt vanuit de plank op de kast
 var deVijfdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(5) button")
 deVijfdeBoekButton.addEventListener("click", vijfdeBoek);
 
@@ -195,7 +197,7 @@ function vijfdeBoek() {
     boekVijf.classList.toggle("openVijfdeBoek");
 }
 
-// Naar de volgende bladzijde op vijfde boek 
+// Het vijfde boek is geopend en je wilt naar de volgende bladzijde
 var devolgendebladboek5button = document.querySelector("article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(1) img")
 devolgendebladboek5button.addEventListener("click", volgbladvanvijfde);
 
@@ -225,8 +227,10 @@ function vijfdeOpenBoek() {
 
 
 
-
-// Het zesde boek openen vanuit de kast
+/////////////////////////////
+// Boek zes
+/////////////////////////////
+// Het zesde boek die je aanklikt vanuit de plank op de kast
 var deZesdeBoekButton = document.querySelector("article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(6) button")
 deZesdeBoekButton.addEventListener("click", zesdeBoek);
 
