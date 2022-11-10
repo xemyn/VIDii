@@ -883,9 +883,7 @@ main article.terugVorigePagina2{
 article:nth-of-type(5) section:nth-of-type(2) img{
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:10%;
-  /* left: 75%; */
   width:30%;
   height:70%;
 }
@@ -897,35 +895,18 @@ article:nth-of-type(5) section:nth-of-type(2){
 
 /* De afbeelding aan rechterkant op de volgende pagina van het derde boek  */
 article:nth-of-type(6) section:nth-of-type(2) img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:9%;
-  /* left: 75%; */
   width:30%;
   height:70%;
 }
-/* De achtergrondkleurvlak van de derrrde geopende boek aan de rechterkant */
-article:nth-of-type(6) section:nth-of-type(2){
-  /* background-color: #00497A; */
-}
-
 
 /* De afbeelding aan de rechterkant van het vierde open boek */
 article:nth-of-type(7) section:nth-of-type(2) img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:9%;
-  /* left: 75%; */
   width:30%;
   height:70%;
 }
@@ -933,29 +914,21 @@ article:nth-of-type(7) section:nth-of-type(2) img{
 article:nth-of-type(7) section:nth-of-type(2){
   background-color: var(--kleurvlakBladzijdeRood);
 }
-
 main article.openvoglendeblad4{
   display: flex;
 }
-
 main article.openVierdeBoekButton{
   display:none;
 }
-
 main article.terugVorigePagina4{
   display: none;
 }
+
 /* De afbeelding aan rechterkant op de volgende pagina van het vierde boek  */
 article:nth-of-type(8) section:nth-of-type(2) img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:12.5%;
-  /* left: 75%; */
   width:25%;
   height:75%;
 }
@@ -1156,9 +1129,6 @@ main article.zesdeOpenBoek{
 @keyframes rollen {
   0% {transform: translate(0);}
   40% {transform: translateX(30em) translateY(30em) rotate(-180deg);}
-  /* 60% {transform: translateX(50em) translateY(15em) rotate(0deg);}
-  80% {transform: translateX(70em) translateY(30em) rotate(180deg);} */
-  /* 50%{ transform: translateX(70em) translateY(30em) rotate(90deg);} */
   100% {transform: translateX(110em) translateY(30em) rotate(360deg);}
 }
 
@@ -1182,7 +1152,6 @@ main article.zesdeOpenBoek{
   article:nth-of-type(1n+2){
     height:25%;
     transform:scale(1.15);
-    /* border: .1em solid #8d5131; */
     outline: var(--zwartePenseel) solid .1em;
   }
   /* Brron: [Jeffrey kwam met idee object fit] */
