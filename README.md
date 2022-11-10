@@ -126,19 +126,19 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, nog een
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/definitiefontwerpIntroductie" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpOpenenKast" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpKastGeopend" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpEersteBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpTweedeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpTweedeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpDerdeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpDerdeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpVierdeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpVierdeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpVijfdeBoek" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpVijfdeBoekVolgende" width="375px" alt="final ontwerp">
-  <img src="readme-images/definitiefontwerpZesdeBoek" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpIntroductie" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpOpenenKast" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpKastGeopend" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpEersteBoek" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpTweedeBoek" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpTweedeBoekVolgende" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpDerdeBoek" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpDerdeBoekVolgende" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVierdeBoek" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVierdeBoekVolgende" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVijfdeBoek" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpVijfdeBoekVolgende" width="375px" alt="final ontwerp">
+  <img src="readme-images/definitiefOntwerpZesdeBoek" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -170,20 +170,15 @@ Bronnen voor het onderzoek over wie, wat nijntje precies is. De gebruikte data s
 6. [ Stijlgids ] https://issuu.com/carmendompeling/docs/br_nijntje_stijlgids_nieuwste 
 
 Bronnen voor het coderen
-7. [ kleurenpalet om erachter te komen welke hex kleuren dick bruna gebruikt ] 
-    https://www.color-hex.com/color-palette/101109 
+7. [ kleurenpalet om erachter te komen welke hex kleuren dick bruna gebruikt ] https://www.color-hex.com/color-palette/101109 
 8. [ buiten en binnen border van een div ] https://www.delftstack.com/howto/css/css-inner-border/
 9. [ Hoe ik de deuren open en dicht heb laten klappen] https://codepen.io/am_eu/pen/EgedaQ
 10. [ Hoe ik de bal wilde laten draaien ] https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate
 11. [ triangle, voor de bladzijde flip] http://apps.eky.hk/css-triangle-generator/ 
-12. [ content in before en after voor de hover van de boeken] 
-    https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Generated_content
-13. [ ontent in before en after voor de hover van de boeken]  
-    https://www.geeksforgeeks.org/how-to-write-hover-condition-for-abefore-and-aafter-in-css/
-14. [ Gratis icon gestolen voor de muis] 
-    https://www.flaticon.com/free-icon/hand-up_2995442?related_id=2995442&origin=search#
-15. [ Hoe ik de cursor heb laten veranderen met een afbeelding ]
-    https://blog.logrocket.com/creating-custom-mouse-cursor-css/ 
+12. [ content in before en after voor de hover van de boeken] https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Generated_content
+13. [ ontent in before en after voor de hover van de boeken]  https://www.geeksforgeeks.org/how-to-write-hover-condition-for-abefore-and-aafter-in-css/
+14. [ Gratis icon gestolen voor de muis] https://www.flaticon.com/free-icon/hand-up_2995442?related_id=2995442&origin=search#
+15. [ Hoe ik de cursor heb laten veranderen met een afbeelding ] https://blog.logrocket.com/creating-custom-mouse-cursor-css/ 
 16. [ De kast / Het openenen van de boeken / @Media, responsive / Het draaien van een tekst / geen hover rfilter op 
     de deur knop ]Sanne & Jeffrey
 
