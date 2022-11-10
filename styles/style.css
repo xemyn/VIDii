@@ -881,10 +881,6 @@ main article.terugVorigePagina2{
 
 /* De afbeelding aan de rechterkant in het derde boek*/ 
 article:nth-of-type(5) section:nth-of-type(2) img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
   /* left:75%; */
