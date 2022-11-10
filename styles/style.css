@@ -923,7 +923,6 @@ main article.openVierdeBoekButton{
 main article.terugVorigePagina4{
   display: none;
 }
-
 /* De afbeelding aan rechterkant op de volgende pagina van het vierde boek  */
 article:nth-of-type(8) section:nth-of-type(2) img{
   position: absolute;
@@ -932,54 +931,35 @@ article:nth-of-type(8) section:nth-of-type(2) img{
   width:25%;
   height:75%;
 }
-
 /* De achtergrondkleurvlak van de vierde geopende boek aan de rechterkant */
 article:nth-of-type(8) section:nth-of-type(2){
   background-color: var(--teksAchtergrondKleur);
 }
 
-/* 9 */
-
 /* De afbeelding aan de rechterkant van het vijfde open boek */
 article:nth-of-type(9) section:nth-of-type(2)  img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:9%;
-  /* left: 75%; */
   width:30%;
   height:70%;
 }
 
 article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(1) img:first-of-type {
-  /* position: absolute ; */
   top:0;
-  /* bottom: 0; */
   right:0;
 }
 
 article:nth-of-type(10) section:nth-of-type(2) img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:9%;
-  /* left: 75%; */
   width:32%;
   height:70%;
 } 
 article:nth-of-type(9) section:nth-of-type(2){
   background-color: var(--kleurvlakBladzijdeBlauw);
 }
-
-
 /*Potloden op de vijfdelank */
 article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(5) img:nth-of-type(1) {
   position: absolute;
@@ -988,7 +968,6 @@ article:nth-of-type(1) section:nth-of-type(9) li:nth-of-type(5) img:nth-of-type(
   left: 5em;
   bottom:4.9em;
 }
-
 main article.openvoglendeblad5{
   display: flex;
 }
@@ -999,45 +978,28 @@ main article.terugVorigePagina5{
   display: none;
 }
 
-
 article:nth-of-type(11){
   border-radius: 5%;
   background-color: var(--omslagBoek);
 }
-
 article:nth-of-type(11) section{
   background-color:var(--kast);
-  
 }
 article:nth-of-type(11) section:nth-of-type(1){
   border-radius: 0 0 0 5%;
 }
-
 article:nth-of-type(11) section:nth-of-type(2){
   border-radius: 0 5% 5% 0;
 }
-
 /* De tekst op linkerbladzijde van de zesde boek */
 article:nth-of-type(11) section:nth-of-type(1) h1{
-  /* justify-content: center;  */
-  /* align-items: center; */
-  /* align-items: left; */
-  /* margin:auto;
-  font-size: 1em; */
-  /* margin:3em; */
-  /* padding-top: 2em; */
   padding-top: .5em;
   font-family: var(--titel-font);
-  /* text-align: center; */
 }
-
+/* Boek 6 */
 article:nth-of-type(11) section:nth-of-type(1) h1:nth-of-type(1) {
   margin-top: 30%;
-  /* margin-left: 20%; */
 }
-
-
-
 /* De tekst op rechterbladzijde van de zesde boek */
 article:nth-of-type(11) section:nth-of-type(2) h1{
   margin:auto;
@@ -1046,13 +1008,11 @@ article:nth-of-type(11) section:nth-of-type(2) h1{
   font-family: var(--titel-font);
   text-align: center;
 }
-
 article:nth-of-type(11) section:nth-of-type(2) h1:nth-of-type(1) {
   margin-top: 70%;
   /* margin-right: -20%; */
   left:50%;
 }
-
 article:nth-of-type(11) section:nth-of-type(2) img{
   position: absolute;
   top:3em;
@@ -1060,15 +1020,12 @@ article:nth-of-type(11) section:nth-of-type(2) img{
   width:55%;
   height:85%;
 } 
-
-
 main article.openZesdeBoekButton{
   display:none;
 }
 main article.zesdeOpenBoek{
   display: none;
 }
-
 
 /* De bal die in de introductie aan het rollen is */
 .bal img {
@@ -1082,18 +1039,13 @@ main article.zesdeOpenBoek{
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-
-
 /* Nijntje die zich verstopt achter de kast  */
 @keyframes verstoppertje{
   0% {transform: translateX(-2.8em); }
   70% {transform: translateX(.9em); }
   80% {transform: translateX(.8em); }
-  /* 90% {transform: translateX(-3em);} */
   100% {transform: translateX(-2.8em); }
 }
-
-
 /* Boek op de --plank wordt eruit gehaald */
 @keyframes eersteboekopenklaprechts {
   0% {opacity: 0;transform: translateX(-1%) rotateY(45deg);}
@@ -1109,9 +1061,6 @@ main article.zesdeOpenBoek{
 @keyframes klikopmijopenkast {
   0% {transform: scale(1);
     box-shadow: 0 0 0 0 rgba(255, 198, 11, 0.7);}
-  /* 25% {transform: scale(1.6);} */
-  /* 50% {transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);} */
   75% {transform: scale(1.5);
     box-shadow: 0 0 0 10px rgba(255, 198, 11, 0);}
   100% {transform: scale(1);
@@ -1123,8 +1072,6 @@ main article.zesdeOpenBoek{
 0% {transform: translateX(0);}
 100% {transform: translateX(5em) translateY(15em) rotate(360deg);}
 }
-
-
 
 @keyframes rollen {
   0% {transform: translate(0);}
