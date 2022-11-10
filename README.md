@@ -18,20 +18,23 @@ Emy Nguyen
 Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een beetje eronder)
 
 
-
-
-
 # Je plan
 
 <details open>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
-  ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  ### Onderzoek & schetsen:
+  <img src="readme-images/OnderzoekEnSchetsen1.png" width="375px" alt="eerste pagina">
+  <img src="readme-images/OnderzoekEnSchetsen2.png" width="375px" alt="tweede pagina">
+  <img src="readme-images/OnderzoekEnSchetsen3.png" width="375px" alt="derde pagina">
+  <img src="readme-images/OnderzoekEnSchetsen4.png" width="375px" alt="vierde pagina">
+  <img src="readme-images/OnderzoekEnSchetsen5.png" width="375px" alt="vijfde pagina">
+  <img src="readme-images/OnderzoekEnSchetsen6.png" width="375px" alt="zesde pagina">
+
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - Kennis maken met javascript om 
+  - Kennis maken met javascript om bepaalde interacties te laten uitvoeren.
   - punt 2
   - nog een punt
   - ...
@@ -45,8 +48,8 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een bee
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
-  <img src="readme-images/eersteVoortgangFeedback1.png" width="375px" alt="eerste feedback">
-  <img src="readme-images/eersteVoortgangFeedback2.png" width="375px" alt="tweede  feedback">
+  <!-- <img src="readme-images/eersteVoortgangFeedback1.png" width="375px" alt="eerste feedback">
+  <img src="readme-images/eersteVoortgangFeedback2.png" width="375px" alt="tweede  feedback"> -->
 
   ### Bevinding 1 [afbeelding met feedback verwerkt]:
   <img src="readme-images/eersteVoortgangFeedback1.png" width="375px" alt="eerste feedback">
@@ -62,37 +65,27 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een bee
 
   ### Bevinding 5 [afbeelding met feedback verwerkt]:
   <img src="readme-images/eersteVoortgangFeedback5.png" width="375px" alt="vijfde  feedback">
-
-
-
 </details>
-
-
-
 
 ## Voortgang/Feedback 2
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
-  ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  ### Bevinding 1 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/tweedeVoortgangFeedback1.png" width="375px" alt="eerste feedback">
 
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  ### Bevinding 2 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/tweedeVoortgangFeedback2.png" width="375px" alt="tweede  feedback">
 
+  ### Bevinding 3 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/tweedeVoortgangFeedback3.png" width="375px" alt="derde feedback">
 
+  ### Bevinding 4 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/tweedeVoortgangFeedback4.png" width="375px" alt="vierde  feedback">
 
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
+  ### Bevinding 5 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/tweedeVoortgangFeedback5.png" width="375px" alt="vijfde  feedback">
 
 </details>
 
@@ -104,25 +97,20 @@ Mijn startniveau is: is erg matig, namelijk blauw (misschien lichtblauw, een bee
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
-  ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+   ### Bevinding 1 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/derdeVoortgangFeedback1.png" width="375px" alt="eerste feedback">
 
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  ### Bevinding 2 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback2.png" width="375px" alt="tweede  feedback">
 
+  ### Bevinding 3 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback3.png" width="375px" alt="derde feedback">
 
+  ### Bevinding 4 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback4.png" width="375px" alt="vierde  feedback">
 
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
-
+  ### Bevinding 5 [afbeelding met feedback verwerkt]:
+  <img src="readme-images/eersteVoortgangFeedback5.png" width="375px" alt="vijfde  feedback">
 </details>
 
 

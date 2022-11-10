@@ -223,7 +223,7 @@ section:nth-of-type(3) div:nth-of-type(4) {
 }
 
 /* De diepte van de boekenkast */
-section:nth-of-type(4){
+section:nth-of-type(5){
   margin:0;
   position: absolute;
   background-color: var(--kast);
@@ -235,7 +235,7 @@ section:nth-of-type(4){
 }
 
 /* De planken van de boekenkast */
-section:nth-of-type(5) {
+section:nth-of-type(6) {
   margin:0;
   position: absolute;
   background-color: var(--kast);
@@ -245,7 +245,7 @@ section:nth-of-type(5) {
   top:0;
   left:2em;
 }
-section:nth-of-type(5) ul {
+section:nth-of-type(6) ul {
   height:100%;
   margin:0;
   padding:0;
@@ -253,12 +253,12 @@ section:nth-of-type(5) ul {
   display:flex;
   flex-direction: column;
 }
-section:nth-of-type(5) ul li {
+section:nth-of-type(6) ul li {
   flex-grow:1;
   width: 100%;
   position:relative;
 }
-section:nth-of-type(5) ul li::after {
+section:nth-of-type(6) ul li::after {
   content:"";
   background-color: var(--kast);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
@@ -270,7 +270,7 @@ section:nth-of-type(5) ul li::after {
 }
 
 /* De rechterdeur van de boekenkast */
-section:nth-of-type(6) {
+section:nth-of-type(4) {
   z-index: 2;
   position: absolute;
   background-color: var(--kast);
@@ -288,11 +288,11 @@ die kant vast staat wanneer het element wordt gedraaid */
   place-items: center;
 }
 /* Hoe de en dat de rechterdeur open gaat */
-section:nth-of-type(6).rechterdeurOpen{
+section:nth-of-type(4).rechterdeurOpen{
   transform: rotateY(135deg) skewY(-15deg);
 }
 /* De binnenkant van de rechterdeur */
-section:nth-of-type(6) div:nth-of-type(1) {
+section:nth-of-type(4) div:nth-of-type(1) {
   position: absolute;
   background-color: var(--kast);
   box-shadow: inset 0 0 0 2px var(--zwartePenseel);
@@ -301,7 +301,7 @@ section:nth-of-type(6) div:nth-of-type(1) {
   backface-visibility: hidden;
 }
 /* De bovenkant van de rechterdeur*/
-section:nth-of-type(6) div:nth-of-type(2) {
+section:nth-of-type(4) div:nth-of-type(2) {
   position:absolute;
   top:0;
   left:0;
@@ -313,7 +313,7 @@ section:nth-of-type(6) div:nth-of-type(2) {
   box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De zijkant van de rechterdeur */
-section:nth-of-type(6) div:nth-of-type(3) {
+section:nth-of-type(4) div:nth-of-type(3) {
   position:absolute;
   top:0;
   left:0;
@@ -325,7 +325,7 @@ section:nth-of-type(6) div:nth-of-type(3) {
   box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De achterkant van de rechterdeur*/
-section:nth-of-type(6) div:nth-of-type(4) {
+section:nth-of-type(4) div:nth-of-type(4) {
   position:absolute;
   inset:0;
   transform:translateZ(-.5em);
@@ -334,7 +334,7 @@ section:nth-of-type(6) div:nth-of-type(4) {
   box-shadow: inset 0 0 0 1px var(--zwartePenseel);
 }
 /* De deurklink die zich op de rechterdeur bevindt*/
-section:nth-of-type(6) button{
+section:nth-of-type(4) button{
   position: absolute;
   background: none;
   border-radius: 50%;
@@ -349,7 +349,7 @@ section:nth-of-type(6) button{
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-section:nth-of-type(6) button::before{
+section:nth-of-type(4) button::before{
   content: "";
   position: absolute;
   /* background-color: aqua; */
@@ -364,7 +364,7 @@ section:nth-of-type(6) button::before{
 }
 
 /* Wanneer je over de deurklink hovert krijg je tekst te zien zovan CTA klik op de deur */
-section:nth-of-type(6) button:hover::after{
+section:nth-of-type(4) button:hover::after{
   content: "nieuwsgierig geraakt? neem een kijkje in de boeken van nijntje's kast ";
   font-family: var(--body-font);
   position: absolute;

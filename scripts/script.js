@@ -1,15 +1,15 @@
 // JavaScript Document
 console.log("Howdy!");
 
-var element1 = document.querySelector("section:nth-of-type(6)");
-element1.addEventListener("click", toggleDoor);
-
-var element2 = document.querySelector("section:nth-of-type(3)");
+var element2 = document.querySelector("section:nth-of-type(4)");
 element2.addEventListener("click", toggleDoor);
 
+var element1 = document.querySelector("section:nth-of-type(3)");
+element1.addEventListener("click", toggleDoor);
+
 function toggleDoor() {
-    element2.classList.toggle("linkerdeurOpen");
-    element1.classList.toggle("rechterdeurOpen");
+    element1.classList.toggle("linkerdeurOpen");
+    element2.classList.toggle("rechterdeurOpen");
 }
 
 
@@ -248,7 +248,7 @@ function volgbladvanzesde() {
     boekzesblad.classList.toggle("openvoglendeblad6");
 }
 
-// Het vzesde boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
+// Het zesde boek & volgende baldzijde is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
 var terugvolg6 = document.querySelector("article:nth-of-type(12) section:nth-of-type(1) button:nth-of-type(1) img")
 terugvolg6.addEventListener("click", vorigepagina6);
 
@@ -271,60 +271,3 @@ function zesdeOpenBoek() {
 
 
 
-
-// link staat hier onder
-//www.tnado.com/blog/javascript-move-div-with-the-mouse/?cookie=accept
-var elem = document.querySelector('section:nth-of-type(10)'), 
-    div = document.querySelector('section:nth-of-type(10) div'), 
-    x = 0, 
-    y = 0, 
-    mousedown = false; 
-
- // div event mousedown 
-div.addEventListener('mousedown', function (e) { 
-     // mouse state set to true 
-    mousedown = true; 
-     // subtract offset 
-    x = div.offsetLeft - e.clientX; 
-    y = div.offsetTop - e.clientY; 
-}, true); 
-
- // div event mouseup 
-div.addEventListener('mouseup', function (e) { 
-     // mouse state set to false 
-    mousedown = false; 
-}, true); 
-
- // element mousemove to stop 
-elem.addEventListener('mousemove', function (e) { 
-     // Is mouse pressed 
-    if (mousedown) { 
-         // Now we calculate the difference upwards 
-        div.style.left = e.clientX + x + 'px'; 
-        div.style.top = e.clientY + y + 'px'; 
-    } 
-}, true);
-
-
-// Het tweede boek is open geklapt en je wilt via het opengeklapte boek weer terug naar de homepagina
-// var deTweedeOpenBoekButton = document.querySelector("article:nth-of-type(3) section:nth-of-type(1) button:nth-of-type(2)")
-// deTweedeOpenBoekButton.addEventListener("click", tweedeOpenBoek);
-
-// function tweedeOpenBoek() {
-//     var boekOpenTwee = document.querySelector("main article.openTweedeBoek")
-//     boekOpenTwee.classList.add("openTweedeBoekButton");
-// }
-
-
-
-
-
-
-// volgende bladzijde op tweedeboek 
-// var devolgendebladboek2button = document.querySelector("article:nth-of-type(3) section:nth-of-type(2) div:nth-of-type(1) img")
-// devolgendebladboek2button.addEventListener("click", derdeBoek);
-
-// function derdeBoek() {
-//     var boektweeblad = document.querySelector("article:nth-of-type(4)")
-//     boektweeblad.classList.add("openvoglendeblad");
-// }
