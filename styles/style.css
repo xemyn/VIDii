@@ -840,57 +840,24 @@ article:nth-of-type(4) section:nth-of-type(1) h1{
   font-family: var(--body-font);
   width: 80%;
 }
-
 article:nth-of-type(4) section:nth-of-type(2) img{
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  /* align-items: center; */
   position: absolute;
   top:5em;
-  /* left:75%; */
   right:10%;
-  /* left: 75%; */
   width:28%;
   height:70%;
 }
 
 article:nth-of-type(4) section:nth-of-type(2){
-  /* background-color: coral; */
-  /* opacity: 0; */
   background-color: var(--kleurvlakBladzijdeBlauw);
-  width: 50%;
-  height: 100%;
-  /* display: flex; */
-  /* transform-origin: left center;
-  transition: 1s;
-  transform-style: preserve-3d;
-  animation: 1s eersteboekopenklaprechts .5s forwards; */
 }
 
-/* tekst op linker bladzeide */
+/* Tekst op linker bladzeide tweede boek volgende blad */
 article:nth-of-type(4) section:nth-of-type(1) h1{
-  /* justify-content: center;  */
-  /* align-items: center; */
-  margin:auto;
-  font-size: 1em;
-  /* padding-top: 2em; */
-  /* margin-left: 3em; */
-  font-family: var(--body-font);
-}
-/* Margin van de tekst op de linkerbladzijde van het tweede boek en tweedebladzijde*/
-article:nth-of-type(4) section:nth-of-type(1) h1:nth-of-type(1) {
-  /* top: calc(100% + 5em); */
-  /* margin-top: 22.5%; */
+  width: 88%;
+  left:10%;
 }
 
-/* button naar terug */
-/* article:nth-of-type(4) section:nth-of-type(1) button:nth-of-type(1){
-  position: absolute;
-  border: none;
-  width: 6em;
-  height: 6em;
-} */
 /* Je kan naar volgende bladzijde vanaf tweede open boek */
 main article.openvoglendeblad{
   display: flex;
@@ -900,40 +867,10 @@ naar de vorige bladzijde en vanaf daar kan je weer terug naar de boekenkast */
 main article.terugVorigePagina{
   display: none;
 }
-
-
-/* article:nth-of-type() section:nth-of-type(2) div:nth-of-type(1){
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top:5em;
-  background-image: url(../images/tweedeboekafbrechts.png);
-  background-position: center;
-  background-size: contain;
-  background-size: cover;
-  right:10%;
-  width: 30%;
-  height: 60%;
-  font-family: var(--body-font);
-} */
-
-article:nth-of-type(5){
-  /* position: absolute;
-  background-color: white;
-  z-index: 5;
-  width: 80%;
-  height: 80%;
-  display: none;
-  flex-direction: row; */
-  /* outline: #F36527 solid .25em; */
-  /* border-right: 5em solid black; */
-  /* box-shadow: 0em 0em 1em #28242430; */
-}
 /* Je kan vanaf het derde geopende boek weer terug naar de boekenkast */
 main article.openDerdeBoekButton{
   display:none;
 }
-
 main article.openvoglendeblad2{
   display: flex;
 }
